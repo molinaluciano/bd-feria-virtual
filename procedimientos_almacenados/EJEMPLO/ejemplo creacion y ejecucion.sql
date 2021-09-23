@@ -1,0 +1,35 @@
+CREATE OR REPLACE PROCEDURE ejemplo
+ (
+ p_in IN  VARCHAR2,
+ p_out OUT NUMBER)
+AS
+BEGIN
+p_out:=6;
+
+DBMS_OUTPUT.PUT_LINE('dentro del begin' );
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('UP HUBO UN ERROR' );
+END;
+
+
+SET SERVEROUTPUT ON;
+
+DECLARE 
+     p_out NUMBER;
+BEGIN
+    EJEMPLO('hola', p_out);
+    DBMS_OUTPUT.PUT_LINE(p_out);
+END;
+
+
+
+
+
+
+
+
+
+EXEC EJEMPLO('hola', :p_out);
+CALL EJEMPLO('hola');
+
