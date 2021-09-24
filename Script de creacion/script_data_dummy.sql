@@ -1,8 +1,24 @@
-INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (1, 'CLIENTE INTERNO'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (1, 'ADMINISTRADOR'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (2, 'PRODUCTOR'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (3, 'CLIENTE_EXTERNO'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (4, 'CLIENTE_INTERNO'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (5, 'TRANSPORTISTA'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (6, 'CONSULTOR'); 
+
 INSERT INTO pais  (id_pais, nombre) VALUES (1, 'CHILE'); 
 
 INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
 VALUES (1,1,1, 'luciano', 'molina', 'arias', 'luciano@gmaiil.com', 'aaa', 12345678, 'k', 'los acacios', 343434, 94986612);
+INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
+VALUES (2,1,2, 'philippe', 'amand', 'frias', 'philippe@gmaiil.com', 'bbb', 12345679, 'k', 'los acacios', 343434, 94986612);
+INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
+VALUES (3,1,3, 'matias', 'martinez', 'loqsea', 'matias@gmaiil.com', 'ccc', 12345671, 'k', 'los acacios', 343434, 94986612);
+INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
+VALUES (4,1,4, 'nicolas', 'poblete', 'loqsea', 'nicolas@gmaiil.com', 'ddd', 12345672, 'k', 'los acacios', 343434, 94986612);
+INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
+VALUES (5,1,5, 'cesar', 'poblete', 'loqsea', 'cesar@gmaiil.com', 'eee', 12345673, 'k', 'los acacios', 343434, 94986612);
+
+
 
 INSERT INTO tipo_solicitud (id_tipo_solicitud, descripcion) VALUES (1,'SOLICITUD LOCAL');
 INSERT INTO estado_solicitud (id_estado_solicitud, descripcion) VALUES (1,'INICIADA');
