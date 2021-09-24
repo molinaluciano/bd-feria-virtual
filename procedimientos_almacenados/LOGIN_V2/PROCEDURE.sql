@@ -16,7 +16,7 @@ AS
  NOM_TIPO_USUARIO VARCHAR2(20) :='';
 
 BEGIN
-    IF ID_TIPO_USUARIO_IN NOT BETWEEN 1 AND 5 THEN
+    IF ID_TIPO_USUARIO_IN NOT BETWEEN 1 AND 6 THEN
         STATUS_OUT:= 0;
     ELSE       
         CASE ID_TIPO_USUARIO_IN 
@@ -29,38 +29,41 @@ BEGIN
                         STATUS_OUT:= 1;
                         TIPO_USUARIO_OUT:= NOM_TIPO_USUARIO;
                     END IF;
-            WHEN 2 THEN 
-                PRODUCTOR := TRUE;
-                DBMS_OUTPUT.PUT_LINE('PRODUCTOR');
-                SELECT COUNT(*), TU.CATEGORIA INTO COUNT_USER, NOM_TIPO_USUARIO FROM USUARIO U JOIN TIPO_USUARIO TU ON (U.ID_USUARIO = TU.ID_TIPO_USUARIO) 
-                WHERE CORREO = CORREO_IN AND CONTRASENA = CONTRASENA_IN GROUP BY TU.CATEGORIA ;
-                    IF COUNT_USER > 0 THEN
-                        STATUS_OUT:=1;
-                        TIPO_USUARIO_OUT:= NOM_TIPO_USUARIO;
-                    END IF;
-            WHEN 3 THEN
+            WHEN 2 THEN
                 CLIENTE := TRUE;
                 DBMS_OUTPUT.PUT_LINE('CLIENTE');
                 SELECT COUNT(*), TU.CATEGORIA INTO COUNT_USER, NOM_TIPO_USUARIO FROM USUARIO U JOIN TIPO_USUARIO TU ON (U.ID_USUARIO = TU.ID_TIPO_USUARIO) 
                 WHERE CORREO = CORREO_IN AND CONTRASENA = CONTRASENA_IN GROUP BY TU.CATEGORIA ;
                     IF COUNT_USER > 0 THEN
                         STATUS_OUT:=1;
+                        TIPO_USUARIO_OUT:= NOM_TIPO_USUARIO;
                     END IF;
             WHEN 4 THEN
-                TRANSPORTISTA := TRUE;
-                DBMS_OUTPUT.PUT_LINE('TRANSPORTISTA');
-                SELECT COUNT(*), TU.CATEGORIA INTO COUNT_USER, NOM_TIPO_USUARIO FROM USUARIO U JOIN TIPO_USUARIO TU ON (U.ID_USUARIO = TU.ID_TIPO_USUARIO) 
-                WHERE CORREO = CORREO_IN AND CONTRASENA = CONTRASENA_IN GROUP BY TU.CATEGORIA ;
-                    IF COUNT_USER > 0 THEN
-                        STATUS_OUT:=1;
-                    END IF;
-            WHEN 5 THEN
                 CONSULTOR := TRUE;
                 DBMS_OUTPUT.PUT_LINE('CONSULTOR');
                 SELECT COUNT(*), TU.CATEGORIA INTO COUNT_USER, NOM_TIPO_USUARIO FROM USUARIO U JOIN TIPO_USUARIO TU ON (U.ID_USUARIO = TU.ID_TIPO_USUARIO) 
                 WHERE CORREO = CORREO_IN AND CONTRASENA = CONTRASENA_IN GROUP BY TU.CATEGORIA ;
                     IF COUNT_USER > 0 THEN
                         STATUS_OUT:=1;
+                        TIPO_USUARIO_OUT:= NOM_TIPO_USUARIO;
+                    END IF;
+            WHEN 5 THEN 
+                PRODUCTOR := TRUE;
+                DBMS_OUTPUT.PUT_LINE('PRODUCTOR');
+                SELECT COUNT(*) INTO COUNT_USER FROM PRODUCTOR 
+                WHERE CORREO = CORREO_IN AND CONTRASENA = CONTRASENA_IN;
+                    IF COUNT_USER > 0 THEN
+                        STATUS_OUT:=1;
+                        TIPO_USUARIO_OUT:= 'PRODUCTOR';
+                    END IF;
+            WHEN 6 THEN
+                TRANSPORTISTA := TRUE;
+                DBMS_OUTPUT.PUT_LINE('TRANSPORTISTA');
+                SELECT COUNT(*) INTO COUNT_USER FROM TRANSPORTISTA 
+                WHERE CORREO = CORREO_IN AND CONTRASENA = CONTRASENA_IN;
+                    IF COUNT_USER > 0 THEN
+                        STATUS_OUT:=1;
+                        TIPO_USUARIO_OUT:= 'TRANSPORTISTA';
                     END IF;
         END CASE;
     END IF;
@@ -84,7 +87,7 @@ DECLARE
      STATUS_OUT NUMBER;
      TIPO_USUARIO_OUT VARCHAR2(20);
 BEGIN
-    FV_LOGIN('philippe@gmaiil.com','bbb',3 , STATUS_OUT, TIPO_USUARIO_OUT);
+    FV_LOGIN('productor@productor.com','123asd',5 , STATUS_OUT, TIPO_USUARIO_OUT);
     DBMS_OUTPUT.PUT_LINE('STATUS_OUT WHEN EXECUTE:' ||STATUS_OUT ||TIPO_USUARIO_OUT);
     
 END;

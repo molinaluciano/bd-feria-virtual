@@ -1,9 +1,7 @@
 INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (1, 'ADMINISTRADOR'); 
-INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (2, 'PRODUCTOR'); 
-INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (3, 'CLIENTE_EXTERNO'); 
-INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (4, 'CLIENTE_INTERNO'); 
-INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (5, 'TRANSPORTISTA'); 
-INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (6, 'CONSULTOR'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (2, 'CLIENTE_EXTERNO'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (3, 'CLIENTE_INTERNO'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (4, 'CONSULTOR'); 
 
 INSERT INTO pais  (id_pais, nombre) VALUES (1, 'CHILE'); 
 
@@ -15,17 +13,14 @@ INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_pater
 VALUES (3,1,3, 'matias', 'martinez', 'loqsea', 'matias@gmaiil.com', 'ccc', 12345671, 'k', 'los acacios', 343434, 94986612);
 INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
 VALUES (4,1,4, 'nicolas', 'poblete', 'loqsea', 'nicolas@gmaiil.com', 'ddd', 12345672, 'k', 'los acacios', 343434, 94986612);
-INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
-VALUES (5,1,5, 'cesar', 'poblete', 'loqsea', 'cesar@gmaiil.com', 'eee', 12345673, 'k', 'los acacios', 343434, 94986612);
-
 
 
 INSERT INTO tipo_solicitud (id_tipo_solicitud, descripcion) VALUES (1,'SOLICITUD LOCAL');
 INSERT INTO estado_solicitud (id_estado_solicitud, descripcion) VALUES (1,'INICIADA');
 
 INSERT INTO estado_contrato(id_estado_contrato, estado) VALUES (1, 'ACTIVO');
-
-INSERT INTO contrato (id_contrato, descripcion, fecha_emision, fecha_expiracion, firmas, id_tipo_estado) 
+  
+INSERT INTO contrato (id_contrato, descripcion, fecha_emision, fecha_expiracion, firmas, id_estado_contrato) 
 VALUES (1, 'descripcion de contrato', SYSDATE, SYSDATE,1,1);
 
 INSERT INTO PRODUCTOR (ID_PRODUCTOR, NOMBRE, APELLIDO_PATERNO, APELLIDO_MATERNO, CORREO, CONTRASENA, RUT, NUMERO_IDENTIFICADOR, DIRECCION, CODIGO_POSTAL, TELEFONO, ID_CONTRATO) 
