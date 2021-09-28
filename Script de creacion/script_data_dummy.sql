@@ -1,31 +1,33 @@
+select * from usuario;
 INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (1, 'ADMINISTRADOR'); 
 INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (2, 'CLIENTE_EXTERNO'); 
-INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (3, 'CLIENTE_INTERNO'); 
-INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (4, 'CONSULTOR'); 
-
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (3, 'CLIENTE_LOCAL'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (4, 'CLIENTE_INTERNO'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (5, 'CONSULTOR'); 
 INSERT INTO pais  (id_pais, nombre) VALUES (1, 'CHILE'); 
 
+delete from usuario;
 INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
-VALUES (1,1,1, 'luciano', 'molina', 'arias', 'luciano@gmaiil.com', 'aaa', 12345678, 'k', 'los acacios', 343434, 94986612);
+VALUES (1,1,1, 'admin', 'molina', 'arias', 'admin@admin.com', 'admin', 12345678, 'k', 'los acacios', 343434, 94986612);
 INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
-VALUES (2,1,2, 'philippe', 'amand', 'frias', 'philippe@gmaiil.com', 'bbb', 12345679, 'k', 'los acacios', 343434, 94986612);
+VALUES (2,1,2, 'clienteexterno', 'amand', 'frias', 'clienteexterno@clienteexterno.com', 'clienteexterno', 12345679, 'k', 'los acacios', 343434, 94986612);
 INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
-VALUES (3,1,3, 'matias', 'martinez', 'loqsea', 'matias@gmaiil.com', 'ccc', 12345671, 'k', 'los acacios', 343434, 94986612);
+VALUES (3,1,3, 'clientelocal', 'martinez', 'loqsea', 'clientelocal@clientelocal.com', 'clientelocal', 12345671, 'k', 'los acacios', 343434, 94986612);
 INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
-VALUES (4,1,4, 'nicolas', 'poblete', 'loqsea', 'nicolas@gmaiil.com', 'ddd', 12345672, 'k', 'los acacios', 343434, 94986612);
-
-
-INSERT INTO tipo_solicitud (id_tipo_solicitud, descripcion) VALUES (1,'SOLICITUD LOCAL');
-INSERT INTO estado_solicitud (id_estado_solicitud, descripcion) VALUES (1,'INICIADA');
+VALUES (4,1,4, 'clienteinterno', 'martinez', 'loqsea', 'clienteinterno@clienteinterno.com', 'clienteinterno', 12345671, 'k', 'los acacios', 343434, 94986612);
+INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
+VALUES (5,1,5, 'consultor', 'poblete', 'loqsea', 'consultor@consultor.com', 'consultor', 12345672, 'k', 'los acacios', 343434, 94986612);
 
 INSERT INTO estado_contrato(id_estado_contrato, estado) VALUES (1, 'ACTIVO');
-  
 INSERT INTO contrato (id_contrato, descripcion, fecha_emision, fecha_expiracion, firmas, id_estado_contrato) 
 VALUES (1, 'descripcion de contrato', SYSDATE, SYSDATE,1,1);
+INSERT INTO productor ( id_productor, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono, id_contrato) 
+VALUES (1, 'productor1', 'productor1', 'productor1', 'productor@productor.com', 'productor', 12345672, 'k', 'los acacios', 343434, 94986612,1);
 
-INSERT INTO PRODUCTOR (ID_PRODUCTOR, NOMBRE, APELLIDO_PATERNO, APELLIDO_MATERNO, CORREO, CONTRASENA, RUT, NUMERO_IDENTIFICADOR, DIRECCION, CODIGO_POSTAL, TELEFONO, ID_CONTRATO) 
-VALUES (1, 'nicolai', 'el', 'productor', 'productor@productor.com', '123asd', 222, 'K', 'porahi', '123332', 22,1);
+INSERT INTO  transportista (ID_TRANSPORTISTA, NOMBRE, APELLIDO_PATERNO, APELLIDO_MATERNO, CORREO, CONTRASENA, RUT, NUMERO_IDENTIFICADOR, DIRECCION, CODIGO_POSTAL, TELEFONO) 
+VALUES (1, 'transportista1', 'transportista', 'transportista', 'transportista@transportista.com', 'transportista', 21211222, 'k', 'porahi',  966612, 546456);
 
+-- -----------------------------------
 INSERT INTO solicitud (ID_USUARIO, ID_TIPO_SOLICITUD, id_estado_solicitud, id_solicitud, productor_seleccionado, fecha_publicacion) VALUES (1,1,1,1,NULL,SYSDATE);
 
 
