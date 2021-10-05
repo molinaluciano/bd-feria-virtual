@@ -1,0 +1,98 @@
+-- CREACION DE PROCEDIMIENTO
+
+CREATE OR REPLACE
+PROCEDURE FV_ADM_SELECT_USER
+(ID_TIPO_USUARIO_IN IN NUMBER,
+STATUS_RESULT_OUT OUT NUMBER,
+CURSOR_RESULT_OUT OUT SYS_REFCURSOR) 
+AS 
+INVALID_MODEL EXCEPTION;
+USERS_FOUND EXCEPTION;
+BEGIN 
+    IF ID_TIPO_USUARIO_IN NOT BETWEEN 1 AND 7 THEN
+        RAISE INVALID_MODEL;
+    END IF;
+    DBMS_OUTPUT.PUT_LINE('ID_TIPO_USUARIO_IN: ' || ID_TIPO_USUARIO_IN);
+    CASE ID_TIPO_USUARIO_IN
+            WHEN 6 THEN
+                OPEN CURSOR_RESULT_OUT FOR
+                    SELECT 
+                    ID_PRODUCTOR AS ID_USUARIO,
+                    APELLIDO_MATERNO,
+                    APELLIDO_PATERNO,
+                    NOMBRE,
+                    CORREO,
+                    TELEFONO,
+                    RUT,
+                    DIRECCION
+                    FROM PRODUCTOR;
+                    
+                    RAISE USERS_FOUND;
+            WHEN 7 THEN 
+                OPEN CURSOR_RESULT_OUT FOR
+                    SELECT 
+                    ID_TRANSPORTISTA AS ID_USUARIO,
+                    APELLIDO_MATERNO,
+                    APELLIDO_PATERNO,
+                    NOMBRE,
+                    CORREO,
+                    TELEFONO,
+                    RUT,
+                    DIRECCION
+                    FROM TRANSPORTISTA; 
+                    
+                    RAISE USERS_FOUND;
+            ELSE
+                OPEN CURSOR_RESULT_OUT FOR
+                SELECT 
+                ID_USUARIO,
+                APELLIDO_MATERNO,
+                APELLIDO_PATERNO,
+                NOMBRE,
+                CORREO,
+                TELEFONO,
+                RUT,
+                DIRECCION
+                FROM USUARIO WHERE ID_TIPO_USUARIO = ID_TIPO_USUARIO_IN;
+                
+                    RAISE USERS_FOUND;
+            END CASE;
+EXCEPTION
+    WHEN USERS_FOUND THEN
+        STATUS_RESULT_OUT:= 1;
+        DBMS_OUTPUT.PUT_LINE('USUARIOS ENCONTRADOS' );
+    WHEN INVALID_MODEL THEN
+        STATUS_RESULT_OUT:= -1;
+        DBMS_OUTPUT.PUT_LINE('MODELO INGRESADO INVALIDO' );
+    WHEN OTHERS THEN
+        STATUS_RESULT_OUT:= -2;
+        DBMS_OUTPUT.PUT_LINE('UPS HUBO UN ERROR' );
+END FV_ADM_SELECT_USER;
+
+
+-- EJECUCION DEL PROCEDIMIENTO
+-- DECLARE
+--     CURSOR_TO_EACH  SYS_REFCURSOR;
+--     STATUS_RESULT_OUT NUMBER;
+--     ID_USUARIO NUMBER;
+--     APELLIDO_MATERNO VARCHAR2 (250);
+--     APELLIDO_PATERNO VARCHAR2 (250);
+--     NOMBRE VARCHAR2 (250);
+--     CORREO VARCHAR2 (250);
+--     TELEFONO NUMBER;
+--     RUT NUMBER;
+--     DIRECCION VARCHAR2 (250);
+-- BEGIN
+--   FV_ADM_SELECT_USER (7, STATUS_RESULT_OUT ,CURSOR_TO_EACH);
+            
+--   LOOP 
+--     FETCH CURSOR_TO_EACH
+--     INTO  ID_USUARIO, APELLIDO_MATERNO, APELLIDO_PATERNO, NOMBRE, CORREO, TELEFONO, RUT, DIRECCION;
+--     EXIT WHEN CURSOR_TO_EACH%NOTFOUND;
+--     DBMS_OUTPUT.PUT_LINE(ID_USUARIO || ' | ' || APELLIDO_MATERNO || ' | ' || APELLIDO_PATERNO|| ' | ' || NOMBRE|| ' | ' || CORREO|| ' | ' || TELEFONO|| ' | ' || RUT|| ' | ' || DIRECCION);
+--   END LOOP;
+--   CLOSE CURSOR_TO_EACH;
+--       DBMS_OUTPUT.PUT_LINE('STATUS_RESULT_OUT EXTERIOR: ' || STATUS_RESULT_OUT);
+
+-- END;
+
