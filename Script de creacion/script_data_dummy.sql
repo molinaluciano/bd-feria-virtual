@@ -86,5 +86,13 @@ INSERT INTO SUBASTA (id_solicitud, id_estado_subasta, id_subasta, camion_selecci
 INSERT INTO Ruta (id_ruta, id_subasta) VALUES (1, 1);
 INSERT INTO Detalle_Ruta (id_detalle_ruta, direccion_partida, direccion_destino , id_ruta, observacion, fecha_retiro) VALUES (1, 'bodega productor', 'bodega central', 1, 'carga pesada', SYSDATE );
 
+INSERT INTO ESTADO_VENTA VALUES (1, 'solicitada');
+INSERT INTO ESTADO_VENTA VALUES (2, 'iniciada');
+INSERT INTO ESTADO_VENTA VALUES (3, 'en bodega');
+INSERT INTO ESTADO_VENTA VALUES (4, 'en camino');
+INSERT INTO ESTADO_VENTA VALUES (5, 'entregada');
+INSERT INTO ESTADO_VENTA VALUES (6, 'pagada');
+INSERT INTO ESTADO_VENTA VALUES (7, 'rechazada');
 
-
+INSERT INTO TIPO_PAGO VALUES (1, 'debito');
+INSERT INTO TIPO_PAGO VALUES (1, 'credito');
