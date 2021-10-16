@@ -28,7 +28,9 @@ INSERT INTO  transportista (ID_TRANSPORTISTA, NOMBRE, APELLIDO_PATERNO, APELLIDO
 VALUES (1, 'transportista1', 'transportista', 'transportista', 'transportista@transportista.com', 'transportista', 21211222, 'k', 'La calle del transportista',  966612, 546456);
 
 -- ##################################################################################################
-
+-- TIPO SOLICITUD
+INSERT INTO TIPO_SOLICITUD (ID_TIPO_SOLICITUD, DESCRIPCION) VALUES (1, 'SOLICITUD SALDOS');
+INSERT INTO TIPO_SOLICITUD (ID_TIPO_SOLICITUD, DESCRIPCION) VALUES (2, 'SOLICITUD CON PRODUCTOR');
 -- ESTADOS DE SOLICITUD
 INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (0, 'SOLICITUD INICIADA');
 INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (1, 'SOLICITUD RECHAZADA');
@@ -59,16 +61,16 @@ INSERT INTO FRUTA (ID_FRUTA, ID_CATEGORIA_FRUTA, NOMBRE_FRUTA) VALUES (9, 4, 'Du
 INSERT INTO FRUTA (ID_FRUTA, ID_CATEGORIA_FRUTA, NOMBRE_FRUTA) VALUES (10, 5, 'Coco');
 -- ##################################################################################################
 -- NUEVA SOLICITUD 1
-INSERT INTO SOLICITUD (ID_USUARIO, ID_ESTADO_SOLICITUD, ID_SOLICITUD, PRODUCTOR_SELECCIONADO, FECHA_PUBLICACION) 
-VALUES (2,0,1,NULL,SYSDATE);
+INSERT INTO SOLICITUD (ID_USUARIO,ID_TIPO_SOLICITUD, ID_ESTADO_SOLICITUD, ID_SOLICITUD, PRODUCTOR_SELECCIONADO, FECHA_PUBLICACION) 
+VALUES (2,2,0,1,NULL,SYSDATE);
 -- DETALLE SOLICITUD 1
 INSERT INTO DETALLE_SOLICITUD (ID_DETALLE_SOLICITUD,ID_SOLICITUD, ID_FRUTA, ID_CALIDAD, KILOS) VALUES (1,1,1,2,100);
 INSERT INTO DETALLE_SOLICITUD (ID_DETALLE_SOLICITUD,ID_SOLICITUD, ID_FRUTA, ID_CALIDAD, KILOS) VALUES (2,1,2,2,200);
 -- ##################################################################################################
 -- ##################################################################################################
 -- NUEVA SOLICITUD 2
-INSERT INTO SOLICITUD (ID_USUARIO, ID_ESTADO_SOLICITUD, ID_SOLICITUD, PRODUCTOR_SELECCIONADO, FECHA_PUBLICACION) 
-VALUES (3,0,2,NULL,SYSDATE);
+INSERT INTO SOLICITUD (ID_USUARIO,ID_TIPO_SOLICITUD, ID_ESTADO_SOLICITUD, ID_SOLICITUD, PRODUCTOR_SELECCIONADO, FECHA_PUBLICACION) 
+VALUES (3,2,0,2,NULL,SYSDATE);
 -- DETALLE SOLICITUD 2
 INSERT INTO DETALLE_SOLICITUD (ID_DETALLE_SOLICITUD,ID_SOLICITUD, ID_FRUTA, ID_CALIDAD, KILOS) VALUES (3,2,5,1,100);
 INSERT INTO DETALLE_SOLICITUD (ID_DETALLE_SOLICITUD,ID_SOLICITUD, ID_FRUTA, ID_CALIDAD, KILOS) VALUES (4,2,6,1,200);
@@ -77,7 +79,7 @@ INSERT INTO DETALLE_SOLICITUD (ID_DETALLE_SOLICITUD,ID_SOLICITUD, ID_FRUTA, ID_C
 
 
 INSERT INTO productor_solicitud (id_productor_solicitud, precio, id_productor, id_solicitud) values (1,4545,1,1);
-INSERT INTO detalle_solicitud (id_solicitud, id_fruta, id_calidad, id_detalle_solicitud, kilos) values (1,1,1,1,50)
+INSERT INTO detalle_solicitud (id_solicitud, id_fruta, id_calidad, id_detalle_solicitud, kilos) values (1,1,1,1,50);
 INSERT INTO tipo_camion (id_tipo_camion, refrigeracion, capacidad_kg) values (1,1,10000);
 INSERT INTO tamano_camion (id_tamano_camion, tamano) values (1,'mediano');
 INSERT INTO CAMION (PATENTE, MODELO, MARCA, REVISION_TECNICA,id_tamano_camion, id_tipo_camion, id_transportista, disponibilidad) VALUES ('A3X4AA', 'M4', 'BMW', 0,1,1,1, 1);
@@ -86,6 +88,7 @@ INSERT INTO SUBASTA (id_solicitud, id_estado_subasta, id_subasta, camion_selecci
 INSERT INTO Ruta (id_ruta, id_subasta) VALUES (1, 1);
 INSERT INTO Detalle_Ruta (id_detalle_ruta, direccion_partida, direccion_destino , id_ruta, observacion, fecha_retiro) VALUES (1, 'bodega productor', 'bodega central', 1, 'carga pesada', SYSDATE );
 
+-- ESTADO VENTAS
 INSERT INTO ESTADO_VENTA VALUES (1, 'solicitada');
 INSERT INTO ESTADO_VENTA VALUES (2, 'iniciada');
 INSERT INTO ESTADO_VENTA VALUES (3, 'en bodega');
@@ -94,6 +97,12 @@ INSERT INTO ESTADO_VENTA VALUES (5, 'entregada');
 INSERT INTO ESTADO_VENTA VALUES (6, 'pagada');
 INSERT INTO ESTADO_VENTA VALUES (7, 'rechazada');
 
+-- TIPO DE PAGOS
 INSERT INTO TIPO_PAGO VALUES (1, 'debito');
-INSERT INTO TIPO_PAGO VALUES (1, 'credito');
+INSERT INTO TIPO_PAGO VALUES (2, 'credito');
+
+-- NUEVA VENTA 1
+INSERT INTO VENTA (ID_SOLICITUD, ID_ESTADO_VENTA, ID_VENTA, ID_TIPO_PAGO) VALUES (1,2,1,1);
+-- NUEVA VENTA 2
+INSERT INTO VENTA (ID_SOLICITUD, ID_ESTADO_VENTA, ID_VENTA, ID_TIPO_PAGO) VALUES (2,3,2,1);
 
