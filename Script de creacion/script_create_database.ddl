@@ -76,16 +76,17 @@ ALTER TABLE calidad ADD CONSTRAINT calidad_pk PRIMARY KEY ( id_calidad );
 CREATE TABLE camion (
     id_tipo_camion   NUMBER NOT NULL,
     id_tamano_camion NUMBER NOT NULL,
+    id_camion        NUMBER NOT NULL,
     patente          VARCHAR2(15) NOT NULL,
     modelo           VARCHAR2(30) NOT NULL,
     marca            VARCHAR2(30) NOT NULL,
-    revision_tecnica CHAR(1) NOT NULL,
+    revision_tecnica NUMBER NOT NULL,
     id_transportista NUMBER NOT NULL,
-    disponibilidad   CHAR(1) NOT NULL
+    disponibilidad   NUMBER NOT NULL
 )
 LOGGING;
 
-ALTER TABLE camion ADD CONSTRAINT camion_pk PRIMARY KEY ( patente );
+ALTER TABLE camion ADD CONSTRAINT id_camion_pk PRIMARY KEY ( id_camion );
 
 CREATE TABLE categoria_fruta (
     id_categoria_fruta NUMBER NOT NULL,
