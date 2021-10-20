@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="523DEF85-2D76-0BAF-ADB4-61AD2808F99D" name="Ruta">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 02:39:59 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_ruta" id="54935BAF-7425-0CF9-3601-23A45AC54B68">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 04:01:56 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_subasta" id="48B1E888-8621-B9BD-1362-8DDAF4569900">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-03 02:37:16 UTC</createdTime>
+<generatorID>F344275C-51E1-B747-069A-CD63F85B9EFD</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<referedAttribute>C687C637-FC23-44DD-9DA3-48BFF7D0F986</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="723DF039-0BBC-1527-1A70-447AFAA8B25F" name="Ruta PK">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 04:02:07 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54935BAF-7425-0CF9-3601-23A45AC54B68</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

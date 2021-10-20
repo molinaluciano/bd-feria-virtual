@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="340C1F28-82B0-973A-3AC1-9B66894EBC79" name="Ruta">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>523DEF85-2D76-0BAF-ADB4-61AD2808F99D</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ruta" id="31A8FDBE-4F46-0199-5713-095B2911C2DB">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>54935BAF-7425-0CF9-3601-23A45AC54B68</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_subasta" id="F6EBFC75-62B2-A643-F8B8-B680FE67A805">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>48B1E888-8621-B9BD-1362-8DDAF4569900</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01CE10D3-FC31-92CC-59D8-99E2F0D68780" referredColumn="529BC0F5-8CA4-665D-E35C-A858ED7F3A60"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D46002E3-8612-1307-9270-9E5B64C1E7D4" name="Ruta_PK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>723DF039-0BBC-1527-1A70-447AFAA8B25F</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31A8FDBE-4F46-0199-5713-095B2911C2DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3EC48D7-072C-A0C5-3FD9-4E3606AD0693" name="Ruta__IDX">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F344275C-51E1-B747-069A-CD63F85B9EFD</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F6EBFC75-62B2-A643-F8B8-B680FE67A805"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFD66EA9-92A6-A050-0FB1-A34189989B43" name="Ruta_Subasta_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>F344275C-51E1-B747-069A-CD63F85B9EFD</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6EBFC75-62B2-A643-F8B8-B680FE67A805"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

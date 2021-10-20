@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A7B86691-C4FA-6EA8-BDC0-4D883BC5AFE1" containerWithKeyObject="5563BF2A-F373-4E94-25AC-3AE39F2C0922" localFKIndex="AA550B1F-C4F2-16F3-842E-169B20B5C2CB" name="Subasta_Solicitud_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>B8FEB22B-49FC-3E75-62F5-2CD42CB8FAC2</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<referredTableLongName>Solicitud</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4778E89F-B4E9-73EE-F05D-2A0490C69012</referredTableID>
+<keyObject>A2F4E49D-8F72-5938-B20F-4F1FC5F72B46</keyObject>
+<referredKeyID>A2F4E49D-8F72-5938-B20F-4F1FC5F72B46</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_solicitud</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

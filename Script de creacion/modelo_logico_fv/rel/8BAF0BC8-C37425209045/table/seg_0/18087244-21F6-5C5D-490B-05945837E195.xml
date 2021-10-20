@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18087244-21F6-5C5D-490B-05945837E195" name="Valores_Estatico">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>98BF6714-31A9-1884-818D-52F0D0D79C77</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_valor_estatico" id="587BC922-ECB8-E65F-51D4-0C3B802E318A">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>284B7987-3DCE-EEB5-079D-D52577D2A839</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="1C2D7E9D-FBF0-5D2B-84B0-D6B1936B2772">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>20907E87-4939-DB05-3B97-6279A964A234</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="B7E27283-5F8B-EAFB-CDC2-39355260CB68">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>673D1B8E-D619-FE1D-83B3-BA5CAE3151E2</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor" id="CAA640F6-A196-8528-607A-79F1DA8C5551">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>C407FEFF-76DD-39B6-75FA-2B6348D80E38</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4EC295B1-2724-8DE5-CBB2-8BBFFECBC212" name="Valores_Estatico_PK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>BE2F95BD-92A5-9C80-B954-B1553DB1C79B</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="587BC922-ECB8-E65F-51D4-0C3B802E318A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

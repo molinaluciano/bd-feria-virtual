@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Contrato_Productor" directorySegmentName="seg_0" id="2A0185D5-664A-89AF-A236-18AF0052B844">
+<createdBy>lmolina</createdBy>
+<createdTime>2021-09-06 02:39:22 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<sourcePk>E9F6AE77-0089-C25D-0C47-3BFF73E58A3C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5CFEB75C-C358-9450-17DB-23497296E28D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>5AFE698D-1BBD-BDE8-E1C4-CDE71E66549A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

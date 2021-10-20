@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4933C57F-6063-0835-63BF-9C260542834B" name="Tipo_camion">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>B5253C3A-A9B5-E8AA-58C4-0597D436497B</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_camion" id="B91F5CFE-89B7-8795-4BF2-C4389D09109F">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>F58534A5-16FE-C616-86EC-7390B03DB3E3</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="refrigeracion" id="BC4AF036-0546-081B-ED64-E70163F86B15">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>B3E91A14-2843-B62D-C223-57B4096708C7</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidad_kg" id="D3B7C0F2-96D3-25E8-2372-BCEC39BB2D84">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>229C4381-5334-EA6B-FBF4-16D6DFBE4B34</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="97486925-7A77-AB6A-94D8-4B754EED3817" name="Tipo_camion_PK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>0CEB2A12-D848-B142-98F5-175364AB8708</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B91F5CFE-89B7-8795-4BF2-C4389D09109F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

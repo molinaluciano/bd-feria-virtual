@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="568E073D-C849-28F9-49CC-D36EF3CDF449" name="Detalle_Subasta">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>B5E98347-2F2C-AB7C-EB12-5DAB6533E9D2</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_subasta" id="D1F7B25B-2145-7596-E791-77829D75CCEE">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>3296274A-D9F1-2256-4949-D56C4B6CB35A</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACE545A5-BBE3-C82E-9EE2-F9CC74E39904" referredColumn="529BC0F5-8CA4-665D-E35C-A858ED7F3A60"/>
+</associations>
+</Column>
+<Column name="id_detalle_subasta" id="0D51B429-0973-632C-0B57-9857CA9BFA41">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>80E52899-5BB5-8626-4204-257B781E011E</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio" id="66CE5D08-1998-CFD4-103C-EA562F6982CC">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>148578A2-C0E9-5762-C4DF-80BF1FE398CB</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_camion" id="D45541CF-238A-4340-538E-13C1F41EE3F0">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>1E755F18-79C4-B072-BE3E-D9E84AACD909</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D591490-4F73-1D4D-9BE5-DB3C865D2909" referredColumn="DA7CC82B-6731-9D4B-804E-BBBA563A650F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6225D6DA-9C97-E78A-1E42-B8B3332EC64E" name="Detalle_Subasta__IDX">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>FEB737C3-B596-49F9-7AAF-15DC055B93DC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D45541CF-238A-4340-538E-13C1F41EE3F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F11C7EEF-F8CE-9513-6025-DC65A26A3624" name="Detalle_Subasta_Camion_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>FEB737C3-B596-49F9-7AAF-15DC055B93DC</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D45541CF-238A-4340-538E-13C1F41EE3F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B1F3A0E-6161-73A2-4100-DEB1242DCD57" name="Detalle_Subasta_Subasta_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>1BD7DEF6-B1E7-A689-9153-DF2608D65E80</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1F7B25B-2145-7596-E791-77829D75CCEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

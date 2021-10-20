@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4D591490-4F73-1D4D-9BE5-DB3C865D2909" containerWithKeyObject="568E073D-C849-28F9-49CC-D36EF3CDF449" localFKIndex="F11C7EEF-F8CE-9513-6025-DC65A26A3624" name="Detalle_Subasta_Camion_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>FEB737C3-B596-49F9-7AAF-15DC055B93DC</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<referredTableLongName>Camion</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9B0CCD3D-A836-FACA-8477-AD9C032876C5</referredTableID>
+<keyObject>29BD5E65-46A4-F57E-0CBE-E54C09C567CD</keyObject>
+<referredKeyID>29BD5E65-46A4-F57E-0CBE-E54C09C567CD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_camion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

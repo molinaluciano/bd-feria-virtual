@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30F3D849-F489-0345-022F-35579F82FC8E" name="Detalle_Solicitud">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>CCB5A2CD-5AFB-BC0A-E64E-F096516E87DC</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_solicitud" id="5413C61C-8F5E-8B4B-1911-E7B409AE36ED">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>68DACC4A-B500-72EB-041F-85BB39E91D7C</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE5C0F46-B981-521B-7E08-ADFA0E05CE1B" referredColumn="CE75112E-CFF4-1F92-9968-B6FE8642B0E0"/>
+</associations>
+</Column>
+<Column name="id_fruta" id="4E1A8017-7234-0520-5498-48FC5606D47F">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>F8434EB4-48AF-9525-367B-6151C85098CF</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="176F90E7-5F1D-896E-272A-65859233A353" referredColumn="492A6A74-F2FC-8769-4C3D-E2B3111FD54E"/>
+</associations>
+</Column>
+<Column name="id_calidad" id="7C19940B-59BE-0F3B-57D0-17278168D8A5">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>196AC1B2-AF33-C215-F062-0481FCFC8604</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E07426FA-332A-5872-D002-FE37D0013CAC" referredColumn="A0E1C454-BABD-CA47-8716-620DE539A4AD"/>
+</associations>
+</Column>
+<Column name="id_detalle_solicitud" id="A4ADE6C3-8436-ADB3-3B96-87223AF96225">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>C55B9299-4F39-F096-BD3B-82362D26C558</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kilos" id="DFC208EA-156E-D9AE-A73A-8D1B1D7D0599">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>6E5611C4-7477-8F50-9501-7644F9A4DC60</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F3944B2-E7A6-7972-63AC-1EF04D042D96" name="Detalle_Solicitud_PK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>760DFBA8-E838-6783-B295-A1FA71B1507E</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4ADE6C3-8436-ADB3-3B96-87223AF96225"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A13A233F-ADD4-EC86-459D-69C089A7FBBB" name="Detalle_Solicitud_Calidad_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>C0E23620-451C-7EB4-FC66-EC979A483955</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C19940B-59BE-0F3B-57D0-17278168D8A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC5AFFFF-8612-3CA3-03A0-F495A55ADEC6" name="Detalle_Solicitud_Fruta_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>A161ABBC-039F-F4F9-97D4-2343AD2DB763</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E1A8017-7234-0520-5498-48FC5606D47F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="948E9D84-5A45-1A8B-0E6D-F70F004CC2F5" name="Detalle_Solicitud_Solicitud_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>8A2AE14F-7025-AF35-BCB7-60473734E083</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5413C61C-8F5E-8B4B-1911-E7B409AE36ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

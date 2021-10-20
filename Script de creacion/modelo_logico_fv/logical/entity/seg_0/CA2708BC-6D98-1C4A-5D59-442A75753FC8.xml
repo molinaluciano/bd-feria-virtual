@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA2708BC-6D98-1C4A-5D59-442A75753FC8" name="Detalle_Ruta">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 02:40:04 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_detalle_ruta" id="31A9E5F7-15D9-53A3-34BB-0C1F7C92DEED">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:59:09 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion_partida" id="18822608-939A-40D2-5F43-9ADC3D9C9D03">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:59:37 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion_destino" id="338FD175-EC64-B419-EE03-699F6D0CBB66">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 04:01:00 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_ruta" id="7AD3DA8B-CBFE-024C-3B62-333699B468B4">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 04:02:08 UTC</createdTime>
+<generatorID>0D776942-2BBF-B922-4943-85F6D809BCEE</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<referedAttribute>54935BAF-7425-0CF9-3601-23A45AC54B68</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observacion" id="0024AF67-E36C-F89D-C464-6D5D383F7D0B">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 04:02:32 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_retiro" id="73EBB2BE-7733-0911-5CB8-ED108F19122F">
+<createdBy>lmolina</createdBy>
+<createdTime>2021-09-09 22:29:42 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B5DEE310-52F8-306F-7067-8E80D0626641" name="Detalle_Ruta PK">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:59:31 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>31A9E5F7-15D9-53A3-34BB-0C1F7C92DEED</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

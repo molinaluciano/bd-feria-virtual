@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BB9A90A2-4C5B-68ED-746C-220051650D47" containerWithKeyObject="4778E89F-B4E9-73EE-F05D-2A0490C69012" localFKIndex="4266D151-30AC-9C3C-A20B-2848DCDF1BDC" name="Solicitud_Estado_Solicitud_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-10-20 18:05:19 UTC</createdTime>
+<generatorID>97A31B61-B131-85FC-F5AB-A0D41E54125D</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<referredTableLongName>Estado_Solicitud</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0C85F31B-3148-A392-550E-B60EC38EB09C</referredTableID>
+<keyObject>C30264D7-1CA6-4C25-8066-7A8E19373D97</keyObject>
+<referredKeyID>C30264D7-1CA6-4C25-8066-7A8E19373D97</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estado_solicitud</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

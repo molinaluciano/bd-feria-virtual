@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Transportista_Camion" directorySegmentName="seg_0" id="A8DA60CD-0C68-F560-45F3-319FDA35DAD5">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:04:53 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<sourcePk>4AD02A9C-D567-F374-3414-E5DFDC65D4C0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>559F5BAF-CA6A-2DA1-009C-7DFA1056A488</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7249E701-BCF7-3324-1B82-962AE1D82515</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
