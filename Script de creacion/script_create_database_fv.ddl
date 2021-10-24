@@ -81,9 +81,9 @@ CREATE TABLE camion (
     patente          VARCHAR2(15) NOT NULL,
     modelo           VARCHAR2(30) NOT NULL,
     marca            VARCHAR2(30) NOT NULL,
-    revision_tecnica CHAR(1) NOT NULL,
+    revision_tecnica NUMBER NOT NULL,
     id_transportista NUMBER NOT NULL,
-    disponibilidad   CHAR(1) NOT NULL
+    disponibilidad   NUMBER NOT NULL
 );
 
 ALTER TABLE camion ADD CONSTRAINT camion_pk PRIMARY KEY ( id_camion );
