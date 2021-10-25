@@ -363,7 +363,7 @@ CREATE TABLE venta (
     id_solicitud    NUMBER NOT NULL,
     id_estado_venta NUMBER NOT NULL,
     id_venta        NUMBER NOT NULL,
-    id_tipo_pago    NUMBER NOT NULL
+    id_tipo_pago    NUMBER
 );
 
 CREATE UNIQUE INDEX venta__idx ON

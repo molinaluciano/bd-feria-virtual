@@ -84,7 +84,8 @@ INSERT INTO tipo_camion (id_tipo_camion, refrigeracion, capacidad_kg) values (1,
 INSERT INTO tamano_camion (id_tamano_camion, tamano) values (1,'mediano');
 INSERT INTO CAMION (PATENTE, MODELO, MARCA, REVISION_TECNICA,id_tamano_camion, id_tipo_camion, id_transportista, disponibilidad) VALUES ('A3X4AA', 'M4', 'BMW', 0,1,1,1, 1);
 INSERT INTO estado_subasta (id_estado_subasta, estado) VALUES (1,'INICIADA');
-INSERT INTO SUBASTA (id_solicitud, id_estado_subasta, id_subasta, camion_seleccionado,fecha_publicacion, fecha_termino) VALUES (1,1,1,NULL,SYSDATE, SYSDATE);
+INSERT INTO estado_subasta (id_estado_subasta, estado) VALUES (2,'CERRADA');
+INSERT INTO SUBASTA (id_solicitud, id_estado_subasta, camion_seleccionado,fecha_publicacion, fecha_termino) VALUES (1,1,NULL,SYSDATE, NULL);
 INSERT INTO Ruta (id_ruta, id_subasta) VALUES (1, 1);
 INSERT INTO Detalle_Ruta (id_detalle_ruta, direccion_partida, direccion_destino , id_ruta, observacion, fecha_retiro) VALUES (1, 'bodega productor', 'bodega central', 1, 'carga pesada', SYSDATE );
 
