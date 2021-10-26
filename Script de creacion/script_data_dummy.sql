@@ -1,3 +1,4 @@
+--TIPO USUARIO
 select * from usuario;
 INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (1, 'ADMINISTRADOR'); 
 INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (2, 'CLIENTE_EXTERNO'); 
@@ -6,6 +7,7 @@ INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (4, 'CLIENTE_INTER
 INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (5, 'CONSULTOR'); 
 INSERT INTO pais  (id_pais, nombre) VALUES (1, 'CHILE'); 
 
+--USUARIO
 delete from usuario;
 INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
 VALUES (1,1,1, 'admin', 'admin', 'admin', 'admin@admin.com', 'admin', 12345678, 'K', 'La calle del administrador', 343434, 94986612);
@@ -18,10 +20,14 @@ VALUES (4,1,4, 'clienteinterno', 'clienteinterno', 'clienteinterno', 'clienteint
 INSERT INTO usuario (id_tipo_usuario,id_pais, id_usuario, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono) 
 VALUES (5,1,5, 'consultor', 'consultor', 'consultor', 'consultor@consultor.com', 'consultor', 12345672, 'K', 'La calle del consultor', 343434, 94986612);
 
+--ESTADO DE CONTRATO
 INSERT INTO estado_contrato(id_estado_contrato, estado) VALUES (1, 'ACTIVO');
+
+--CONTRATO
 INSERT INTO contrato (id_contrato, descripcion, fecha_emision, fecha_expiracion, firmas, id_estado_contrato) 
 VALUES (1, 'descripcion de contrato', SYSDATE, SYSDATE,1,1);
 
+--PRODUCTOR
 INSERT INTO productor ( id_productor, nombre, apellido_paterno, apellido_materno, correo, contrasena, rut, numero_identificador, direccion, codigo_postal, telefono, id_contrato) 
 VALUES (1, 'productor1', 'productor1', 'productor1', 'productor@productor.com', 'productor', 12345672, 'k', 'La calle del productor', 343434, 94986612,1);
 INSERT INTO  transportista (ID_TRANSPORTISTA, NOMBRE, APELLIDO_PATERNO, APELLIDO_MATERNO, CORREO, CONTRASENA, RUT, NUMERO_IDENTIFICADOR, DIRECCION, CODIGO_POSTAL, TELEFONO) 
@@ -34,11 +40,10 @@ INSERT INTO TIPO_SOLICITUD (ID_TIPO_SOLICITUD, DESCRIPCION) VALUES (2, 'SOLICITU
 -- ESTADOS DE SOLICITUD
 INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (0, 'SOLICITUD INICIADA');
 INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (1, 'SOLICITUD RECHAZADA');
-INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (2, 'SOLICITUD ACEPTADA');
-INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (3, 'BUSCANDO PRODUCTOR');
-INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (4, 'SUBASTANDO TRANSPORTE');
-INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (5, 'COTIZACION CLIENTE');
-INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (6, 'SOLICITUD CERRADA');
+INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (2, 'BUSCANDO PRODUCTOR');
+INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (3, 'SUBASTANDO TRANSPORTE');
+INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (4, 'COTIZACION CLIENTE');
+INSERT INTO ESTADO_SOLICITUD (ID_ESTADO_SOLICITUD, DESCRIPCION) VALUES (5, 'SOLICITUD CERRADA');
 -- CALIDAD
 INSERT INTO CALIDAD (ID_CALIDAD, CALIDAD) VALUES (1,'NORMAL');
 INSERT INTO CALIDAD (ID_CALIDAD, CALIDAD) VALUES (2,'PREMIUM');
@@ -82,7 +87,8 @@ INSERT INTO productor_solicitud (id_productor_solicitud, precio, id_productor, i
 INSERT INTO detalle_solicitud (id_solicitud, id_fruta, id_calidad, id_detalle_solicitud, kilos) values (1,1,1,1,50);
 INSERT INTO tipo_camion (id_tipo_camion, refrigeracion, capacidad_kg) values (1,1,10000);
 INSERT INTO tamano_camion (id_tamano_camion, tamano) values (1,'mediano');
-INSERT INTO CAMION (PATENTE, MODELO, MARCA, REVISION_TECNICA,id_tamano_camion, id_tipo_camion, id_transportista, disponibilidad) VALUES ('A3X4AA', 'M4', 'BMW', 0,1,1,1, 1);
+INSERT INTO CAMION (ID_CAMION, PATENTE, MODELO, MARCA, REVISION_TECNICA,id_tamano_camion, id_tipo_camion, id_transportista, disponibilidad) VALUES (1, 'A3X4AA', 'M4', 'BMW', 0,1,1,1, 1);
+INSERT INTO CAMION (ID_CAMION, PATENTE, MODELO, MARCA, REVISION_TECNICA,id_tamano_camion, id_tipo_camion, id_transportista, disponibilidad) VALUES (2, 'A3X4AA', 'M4', 'BMW', 0,1,1,1, 1);
 INSERT INTO estado_subasta (id_estado_subasta, estado) VALUES (1,'INICIADA');
 INSERT INTO estado_subasta (id_estado_subasta, estado) VALUES (2,'CERRADA');
 INSERT INTO SUBASTA (id_solicitud, id_estado_subasta, camion_seleccionado,fecha_publicacion, fecha_termino) VALUES (1,1,NULL,SYSDATE, NULL);
