@@ -4,6 +4,8 @@ INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (2, 'CLIENTE_EXTER
 INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (3, 'CLIENTE_LOCAL'); 
 INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (4, 'CLIENTE_INTERNO'); 
 INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (5, 'CONSULTOR'); 
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (6, 'PRODUCTOR');
+INSERT INTO tipo_usuario  (id_tipo_usuario, categoria) VALUES (7, 'TRANSPORTISTA'); 
 INSERT INTO pais  (id_pais, nombre) VALUES (1, 'CHILE'); 
 
 delete from usuario;
