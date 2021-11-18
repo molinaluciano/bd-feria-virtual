@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E04E9759-0273-146B-E102-F96FC1CF4CF7" name="Tipo_Solicitud">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 02:37:54 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tipo_solicitud" id="85E62EF0-EA6D-5309-5EA6-268A38C20432">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:24:01 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="1A805A67-2E1D-6D56-036E-07EEE129560C">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:24:21 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="81A9BFA6-9ACE-CEB8-079A-A2F04D65D284" name="Tipo_Solicitud PK">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:24:18 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>85E62EF0-EA6D-5309-5EA6-268A38C20432</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

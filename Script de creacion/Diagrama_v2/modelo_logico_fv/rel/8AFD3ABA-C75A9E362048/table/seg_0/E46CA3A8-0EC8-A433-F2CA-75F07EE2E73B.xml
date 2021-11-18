@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E46CA3A8-0EC8-A433-F2CA-75F07EE2E73B" name="Estado_Subasta">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>6AA7FEE6-8F71-9902-3FBC-7F7D50DBFA87</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado_subasta" id="606ADF43-2797-4171-772B-39B9610F8CF0">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>8DCC3D0A-5569-67E2-6C2B-D4C451A7610E</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="C42F0384-8A2B-451F-9515-357B8D7E9857">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>22B34945-75E6-1867-5BC6-BFF8C55269AD</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="521B2046-7673-4343-AB61-CE84DE64B9F6" name="Estado_Subasta_PK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>31A505DB-34F4-F00C-6ED7-3867A7B860B6</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="606ADF43-2797-4171-772B-39B9610F8CF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

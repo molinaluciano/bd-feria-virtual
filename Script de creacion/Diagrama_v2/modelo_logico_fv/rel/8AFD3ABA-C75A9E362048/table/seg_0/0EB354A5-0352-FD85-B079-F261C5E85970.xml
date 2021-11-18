@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0EB354A5-0352-FD85-B079-F261C5E85970" name="Camion">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>7249E701-BCF7-3324-1B82-962AE1D82515</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_camion" id="AD7F3BA7-C467-7993-6080-6910709AC09B">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>B6EDCF81-A84C-DAFD-F9B7-5E24B4CDB3EA</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69D45F12-EC41-2F68-4562-002750F8144D" referredColumn="84B24A5F-A639-B928-6E0D-12054C3E4CAB"/>
+</associations>
+</Column>
+<Column name="id_tamano_camion" id="A37F0035-1E8C-F8D7-C5FD-06B548ED9C31">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>F2D06EC4-E417-8CB1-12C4-6D4718FC7EF2</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10154E3E-B065-55EF-7091-C68C0299DE6F" referredColumn="8A372DC5-859A-AEE6-05D4-61CEA91CC101"/>
+</associations>
+</Column>
+<Column name="id_camion" id="C7025403-7697-B43D-3406-F9517762249C">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>C58E6C1F-23E0-C963-A950-6A18E3F3417C</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="patente" id="CC0A892C-F8F9-AB43-4840-3A69DCE6450D">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>5ABBF8EA-2623-C33E-61DD-2EBEE1FDB61C</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modelo" id="4BF75D27-F501-9C4F-CF15-F714FF2A0E8B">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>55C0489A-421B-C123-9B2F-7C069006867D</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="marca" id="149EBCCE-23AC-E48E-838D-64BEB7C27A77">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>555A1415-4EEB-4353-EA86-266EEA4FB451</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="revision_tecnica" id="9D2C4DE4-84F5-B999-37E6-E248531C8B8C">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>E7C0A582-DFEE-412E-9D3D-A2E250851A81</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_transportista" id="FDC1F63D-800D-5C2D-BB38-3E1D852A48B4">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>9F7BC725-ECA7-739F-1CEB-D50C40DB9C12</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8620481D-8BFD-26FE-BAF6-08E4A0F5AFE9" referredColumn="5DF5A837-C3B2-C439-1C6B-F3E0FEB9E09F"/>
+</associations>
+</Column>
+<Column name="disponibilidad" id="B80DBA13-CDA5-9FB4-4B82-8B0DF8057587">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>74BA25A2-0A5C-67C1-BFF4-A89C894023FE</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D18D6EA4-2552-F549-1678-11EABCD880F0" name="Camion_PK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>07FBDAC0-E2F6-FF0E-9222-E2317F814599</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7025403-7697-B43D-3406-F9517762249C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08CFB602-5586-3B4D-79BB-C13C3D60FEBD" name="Camion_Tipo_camion_FK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>70C7C185-99EC-7B1E-98F2-97FA34C7B00F</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD7F3BA7-C467-7993-6080-6910709AC09B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D2FEF01-0426-2F16-81E8-E9733FFA095C" name="Camion_Tamano_Camion_FK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>D06B582F-0084-6C38-05FA-5A06D24B14E9</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A37F0035-1E8C-F8D7-C5FD-06B548ED9C31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C62418F-25E3-D416-DA0C-FAE795AC9EA2" name="Camion_Transportista_FK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>A8DA60CD-0C68-F560-45F3-319FDA35DAD5</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDC1F63D-800D-5C2D-BB38-3E1D852A48B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

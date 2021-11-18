@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="647C7C2D-5097-8FEF-5F5A-501E61536726" name="Subasta">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>7F240EC6-1D99-D202-2040-79F891D7B0B1</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_solicitud" id="59359773-009B-9AFC-E5C4-4A896B0C1A31">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>A4698161-92B8-147A-6048-2EC98CEDDB2F</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D94DB458-45D9-8205-DB4F-9097E780A5FF" referredColumn="D10DD1B2-33C3-FC31-9F60-B8A53FD0C334"/>
+</associations>
+</Column>
+<Column name="id_estado_subasta" id="BAB7AC14-34A2-E27C-D6BD-D06EC6D3DF18">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>0AFAEB9E-7B94-516A-2821-D19FB2B395F9</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16CD4FA8-411F-13B9-AC0C-233DBF808C24" referredColumn="606ADF43-2797-4171-772B-39B9610F8CF0"/>
+</associations>
+</Column>
+<Column name="id_subasta" id="F5DB85AD-79E3-6601-72D4-B3F62CAAF400">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>C687C637-FC23-44DD-9DA3-48BFF7D0F986</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_publicacion" id="E3708CDF-E14D-0A03-D61B-4793AC8DBAD6">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>739D4147-E48D-302F-66B4-CFA0BAACC58C</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_termino" id="35723704-74D3-582A-5740-620319384935">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>20E4E5A1-8544-F48B-4D50-F6750173BCF6</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="camion_seleccionado" id="D21CFD19-F506-B00A-1672-9C2BCDAF6D76">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>367A068F-1D2C-93A2-6D28-AE4CF84E965D</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="04F5198D-8935-A7D5-C0F5-805122C367C9" name="Subasta_PK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>AD1C9B70-2CD8-D0C1-D1B3-B549A0A5A698</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5DB85AD-79E3-6601-72D4-B3F62CAAF400"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8BDA9BE-51E7-7652-99DD-86218582A1CB" name="Subasta__IDX">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B8FEB22B-49FC-3E75-62F5-2CD42CB8FAC2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="59359773-009B-9AFC-E5C4-4A896B0C1A31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C880E3A-F7B1-B69A-031A-80B67FA62586" name="Subasta_Estado_Subasta_FK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>8C10F3C8-CF8C-D3EA-6AA5-25BA108FB72D</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAB7AC14-34A2-E27C-D6BD-D06EC6D3DF18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="248284A8-D778-E30F-1534-0BA891258DE4" name="Subasta_Solicitud_FK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>B8FEB22B-49FC-3E75-62F5-2CD42CB8FAC2</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59359773-009B-9AFC-E5C4-4A896B0C1A31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

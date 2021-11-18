@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5CFEB75C-C358-9450-17DB-23497296E28D" name="Contrato">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 02:38:59 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_contrato" id="D989E6BC-5D43-3FB8-173E-4233A893BC4C">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:40:57 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="356C89C7-FBC1-B9B5-5A18-414DB3E75CB6">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:41:13 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_emision" id="E5A82D4A-FB55-2837-4DEA-EBA12B69FE4E">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:41:32 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_expiracion" id="D914AFA7-A185-D590-B654-C44142DCE13D">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:42:05 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="firmas" id="800C033E-F4B9-EBA7-1444-EE01078401BB">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:42:21 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estado_contrato" id="1A22DFB4-E70B-ACDA-F696-5F6BFDAA8366">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:44:38 UTC</createdTime>
+<generatorID>95888DCC-1D54-3069-5287-EBE184C6B4D0</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<referedAttribute>E4DDB1B3-5AB1-B27E-2893-C02B2746C127</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9F6AE77-0089-C25D-0C47-3BFF73E58A3C" name="Contrato PK">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 03:41:11 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D989E6BC-5D43-3FB8-173E-4233A893BC4C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

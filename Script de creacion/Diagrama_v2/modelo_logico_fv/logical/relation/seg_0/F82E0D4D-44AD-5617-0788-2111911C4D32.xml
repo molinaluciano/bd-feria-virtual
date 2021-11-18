@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="relacion_frutas_saldos" directorySegmentName="seg_0" id="F82E0D4D-44AD-5617-0788-2111911C4D32">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:16:44 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<engineerTo>
+<item key="8AFD3ABA-161D-4F39-6B21-C75A9E362048" value="true"/>
+</engineerTo>
+<sourcePk>DD0F42A8-FBF1-0473-0C41-39160A849DF2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>72519D70-AA58-46B0-CBAA-527945F0F67A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1C2BBE5B-E8A9-D57A-101B-0347D96F3BE5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

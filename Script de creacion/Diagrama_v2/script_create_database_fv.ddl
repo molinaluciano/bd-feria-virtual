@@ -1,7 +1,7 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.2.0.183.1957
---   en:        2021-11-17 19:23:11 CLST
---   sitio:      Oracle Database 12c
---   tipo:      Oracle Database 12c
+--   en:        2021-10-20 15:06:08 CLST
+--   sitio:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
 
 
 
@@ -40,8 +40,6 @@ DROP TABLE productor CASCADE CONSTRAINTS;
 DROP TABLE productor_solicitud CASCADE CONSTRAINTS;
 
 DROP TABLE ruta CASCADE CONSTRAINTS;
-
-DROP TABLE saldo CASCADE CONSTRAINTS;
 
 DROP TABLE solicitud CASCADE CONSTRAINTS;
 
@@ -102,7 +100,7 @@ CREATE TABLE contrato (
     descripcion        VARCHAR2(100) NOT NULL,
     fecha_emision      DATE NOT NULL,
     fecha_expiracion   DATE NOT NULL,
-    firmas             NUMBER NOT NULL,
+    firmas             CHAR(1) NOT NULL,
     id_estado_contrato NUMBER NOT NULL
 );
 
@@ -254,19 +252,6 @@ CREATE UNIQUE INDEX ruta__idx ON
 
 ALTER TABLE ruta ADD CONSTRAINT ruta_pk PRIMARY KEY ( id_ruta );
 
-CREATE TABLE saldo (
-    id_saldo             NUMBER NOT NULL,
-    kilos                NUMBER,
-    disponible           CHAR 
---  WARNING: CHAR size not specified 
-    ,
-    id_cliente_comprador NUMBER,
-    id_fruta             NUMBER NOT NULL,
-    id_calidad           NUMBER NOT NULL
-);
-
-ALTER TABLE saldo ADD CONSTRAINT saldo_pk PRIMARY KEY ( id_saldo );
-
 CREATE TABLE solicitud (
     id_usuario             NUMBER NOT NULL,
     id_tipo_solicitud      NUMBER NOT NULL,
@@ -304,7 +289,7 @@ ALTER TABLE tamano_camion ADD CONSTRAINT tamano_camion_pk PRIMARY KEY ( id_taman
 
 CREATE TABLE tipo_camion (
     id_tipo_camion NUMBER NOT NULL,
-    refrigeracion  NUMBER NOT NULL,
+    refrigeracion  CHAR(1) NOT NULL,
     capacidad_kg   NUMBER NOT NULL
 );
 
@@ -378,7 +363,7 @@ CREATE TABLE venta (
     id_solicitud    NUMBER NOT NULL,
     id_estado_venta NUMBER NOT NULL,
     id_venta        NUMBER NOT NULL,
-    id_tipo_pago    NUMBER NOT NULL
+    id_tipo_pago    NUMBER
 );
 
 CREATE UNIQUE INDEX venta__idx ON
@@ -458,14 +443,6 @@ ALTER TABLE ruta
     ADD CONSTRAINT ruta_subasta_fk FOREIGN KEY ( id_subasta )
         REFERENCES subasta ( id_subasta );
 
-ALTER TABLE saldo
-    ADD CONSTRAINT saldo_calidad_fk FOREIGN KEY ( id_calidad )
-        REFERENCES calidad ( id_calidad );
-
-ALTER TABLE saldo
-    ADD CONSTRAINT saldo_fruta_fk FOREIGN KEY ( id_fruta )
-        REFERENCES fruta ( id_fruta );
-
 ALTER TABLE solicitud
     ADD CONSTRAINT solicitud_estado_solicitud_fk FOREIGN KEY ( id_estado_solicitud )
         REFERENCES estado_solicitud ( id_estado_solicitud );
@@ -510,9 +487,9 @@ ALTER TABLE venta
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            30
+-- CREATE TABLE                            29
 -- CREATE INDEX                             6
--- ALTER TABLE                             58
+-- ALTER TABLE                             55
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
@@ -543,11 +520,10 @@ ALTER TABLE venta
 -- DROP DATABASE                            0
 -- 
 -- REDACTION POLICY                         0
--- TSDP POLICY                              0
 -- 
 -- ORDS DROP SCHEMA                         0
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
 -- ERRORS                                   2
--- WARNINGS                                 1
+-- WARNINGS                                 0

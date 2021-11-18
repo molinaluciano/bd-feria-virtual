@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="87740564-3E8D-165A-20E8-AE1A27EC0AF6" containerWithKeyObject="3497A93E-C55E-68A2-0239-A6AF9369A027" localFKIndex="85D6771F-0A21-3CB6-732E-1D66A3F4B54E" name="Fruta_Categoria_Fruta_FK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>4D38D818-A613-DCF6-053D-1230FDFE1880</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<referredTableLongName>Categoria_Fruta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>05F7DD65-D586-EE51-B804-8D8B05DE6BAC</referredTableID>
+<keyObject>C83918CB-32B5-0330-364A-B0F9CDDF1D31</keyObject>
+<referredKeyID>C83918CB-32B5-0330-364A-B0F9CDDF1D31</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_categoria_fruta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

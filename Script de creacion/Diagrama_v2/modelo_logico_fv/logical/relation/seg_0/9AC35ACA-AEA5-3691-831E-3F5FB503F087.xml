@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Solicitud_Venta" directorySegmentName="seg_0" id="9AC35ACA-AEA5-3691-831E-3F5FB503F087">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 02:50:01 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<sourcePk>2DA8DC54-C248-9B05-DEDA-25751545ACD7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D5E48811-592C-C10B-BDCF-431EC0B65778</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>44532BA7-9240-8EFF-470D-2C835E463F3E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Solicitud_Subasta" directorySegmentName="seg_0" id="B8FEB22B-49FC-3E75-62F5-2CD42CB8FAC2">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 02:58:13 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<sourcePk>2DA8DC54-C248-9B05-DEDA-25751545ACD7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D5E48811-592C-C10B-BDCF-431EC0B65778</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>7F240EC6-1D99-D202-2040-79F891D7B0B1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tamano_Camion_Camion" directorySegmentName="seg_0" id="D06B582F-0084-6C38-05FA-5A06D24B14E9">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 04:11:31 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<sourcePk>1B0C1E75-603F-A0F2-F6F7-D5D6680A0C6D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>604D04FB-1F2B-7FBA-C946-F3724D54E156</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7249E701-BCF7-3324-1B82-962AE1D82515</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

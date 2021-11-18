@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Estado_Venta_Venta" directorySegmentName="seg_0" id="28504CFD-8A3F-E8D4-F716-52C5A438C17E">
+<createdBy>phili</createdBy>
+<createdTime>2021-09-02 02:56:48 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<sourcePk>08124AA0-4D96-627B-6873-47CE40C14E4B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F3596666-EA7C-971A-6E31-B96DA2074B98</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>44532BA7-9240-8EFF-470D-2C835E463F3E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

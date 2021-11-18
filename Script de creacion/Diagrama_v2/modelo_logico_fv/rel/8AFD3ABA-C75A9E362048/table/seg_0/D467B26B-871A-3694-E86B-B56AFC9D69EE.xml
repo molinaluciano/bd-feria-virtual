@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D467B26B-871A-3694-E86B-B56AFC9D69EE" name="Venta">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>44532BA7-9240-8EFF-470D-2C835E463F3E</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_solicitud" id="EFCAAA46-A899-1B5C-516A-A1A4162F0FBB">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>6C3D40F4-517C-9E4B-48E5-C8114F959D61</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F5CB31B-0AA6-F74C-FD7D-2C70114FF08F" referredColumn="D10DD1B2-33C3-FC31-9F60-B8A53FD0C334"/>
+</associations>
+</Column>
+<Column name="id_estado_venta" id="D9E4524B-A7ED-4848-B2ED-8CF689951C1F">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>896FC375-0FFB-6F1A-007C-6CBB33FC0F28</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96FCBB7D-796D-D1D9-3C68-B8FFB5F9AAC6" referredColumn="B7407F2D-4DFB-818A-DB0F-D9CC74360C4E"/>
+</associations>
+</Column>
+<Column name="id_venta" id="FA807CD0-4AEE-2868-7714-980AA49DD0D2">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>B8793635-F892-BC9B-926F-D5F23213BF60</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_pago" id="BE558B74-8D9D-C489-A1F3-1225CA176A5F">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>EDCA8D20-3E20-6907-25C9-630D5F2FE4A4</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3339134-05BF-BBAD-ED58-F865A27B9E2D" referredColumn="E98FAE98-D276-42ED-5E18-13B0BFD284E2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2421B95-339D-2FFE-35E3-EA7F1D0AC910" name="Venta_PK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>B187A076-AB29-4F0F-0A89-B3D2A52D2099</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA807CD0-4AEE-2868-7714-980AA49DD0D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFA526B7-D51B-0B45-B332-BA85883AF906" name="Venta__IDX">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>9AC35ACA-AEA5-3691-831E-3F5FB503F087</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="EFCAAA46-A899-1B5C-516A-A1A4162F0FBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F064CA1A-66E6-4A76-4D4E-0B797552A7D3" name="Venta_Estado_Venta_FK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>28504CFD-8A3F-E8D4-F716-52C5A438C17E</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9E4524B-A7ED-4848-B2ED-8CF689951C1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A8D1AC8-75FC-894D-5B6D-E4A093B8E032" name="Venta_Solicitud_FK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>9AC35ACA-AEA5-3691-831E-3F5FB503F087</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFCAAA46-A899-1B5C-516A-A1A4162F0FBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B32154B-0BB1-672D-8A33-394F22533972" name="Venta_Tipo_Pago_FK">
+<createdBy>lucianomolina</createdBy>
+<createdTime>2021-11-17 22:21:39 UTC</createdTime>
+<generatorID>C299BBC5-6BCA-6BC4-16F7-682504EF2553</generatorID>
+<ownerDesignName>modelo_logico_fv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE558B74-8D9D-C489-A1F3-1225CA176A5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
