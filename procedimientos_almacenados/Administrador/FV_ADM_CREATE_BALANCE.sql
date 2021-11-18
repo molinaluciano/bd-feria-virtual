@@ -13,7 +13,8 @@ AS
     COUNT_USER NUMBER :=0;
     COUNT_FRUIT NUMBER :=0;
     COUNT_QUALITY NUMBER :=0;
-    
+    ID_ADM NUMBER :=0;
+    ID_REQUEST NUMBER :=0;
     INVALID_USER EXCEPTION;
     INVALID_FRUIT EXCEPTION;
     INVALID_QUALITY EXCEPTION;
@@ -57,6 +58,53 @@ BEGIN
     DISPONIBLE_IN,
     KILOS_IN)
     RETURN ID_SALDO INTO ID_RESULT_OUT;
+
+    IF ID_CLIENTE_COMPRADOR_IN IS NULL THEN 
+        SELECT ID_USUARIO INTO ID_ADM FROM USUARIO  WHERE  ID_TIPO_USUARIO = 1 AND ROWNUM = 1;
+        INSERT INTO SOLICITUD (
+        ID_USUARIO, 
+        ID_TIPO_SOLICITUD, 
+        ID_ESTADO_SOLICITUD,
+        FECHA_PUBLICACION
+        ) VALUES
+        (ID_ADM,1,5,SYSDATE)
+        RETURN ID_SOLICITUD INTO ID_REQUEST;
+
+        INSERT INTO DETALLE_SOLICITUD  
+        (
+            ID_SOLICITUD, 
+            ID_FRUTA, 
+            ID_CALIDAD, 
+            KILOS
+        ) VALUES (
+            ID_REQUEST,
+            ID_FRUTA_IN,
+            ID_CALIDAD_IN,
+            KILOS_IN
+        );
+    ELSE
+        INSERT INTO SOLICITUD (
+        ID_USUARIO, 
+        ID_TIPO_SOLICITUD, 
+        ID_ESTADO_SOLICITUD,
+        FECHA_PUBLICACION
+        ) VALUES
+        (ID_CLIENTE_COMPRADOR_IN,1,5,SYSDATE)
+        RETURN ID_SOLICITUD INTO ID_REQUEST;
+
+        INSERT INTO DETALLE_SOLICITUD  
+        (
+            ID_SOLICITUD, 
+            ID_FRUTA, 
+            ID_CALIDAD, 
+            KILOS
+        ) VALUES (
+            ID_REQUEST,
+            ID_FRUTA_IN,
+            ID_CALIDAD_IN,
+            KILOS_IN
+        );
+    END IF;
     RAISE BALANCE_CREATED;
     
     EXCEPTION
