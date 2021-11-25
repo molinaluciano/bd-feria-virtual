@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2A0C269-D7C9-D1C8-8D4D-E7E90A9D16E7" name="estado_subasta">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>A75F0D1E-0B08-FF13-2285-84E03E732FED</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado_subasta" id="A1F5A275-9B48-A9ED-CE87-AB4A4408885F">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>1353B297-F262-1FAF-DC02-DBE58F9F0853</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="914D92DF-93CF-0EB2-6BF5-0E3BC0D4F053">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>1961403B-74C8-BC59-FD8F-1DEC82DB1425</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0A595ED3-8DEB-2EA9-338E-49A7B465CA97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5EE04C9-057C-11A4-0195-79BEE83043EB" name="estado_subasta_PK">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>E24C9BB9-5601-4D24-90A2-6CBD4EC6ED6C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1F5A275-9B48-A9ED-CE87-AB4A4408885F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

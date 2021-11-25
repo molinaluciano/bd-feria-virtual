@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tipo_pago_venta" directorySegmentName="seg_0" id="DF39C73B-F462-C80A-44AE-309BBBB64BEC">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>478D9816-813F-297E-BD18-53A9E779C224</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<sourcePk>54C02F4E-6121-CCC9-EAE5-057601695154</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>537BF9FE-62DB-7FD9-E960-D6DD9EF522E4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>52CB1506-8B49-F6FD-8470-520C973DAE12</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

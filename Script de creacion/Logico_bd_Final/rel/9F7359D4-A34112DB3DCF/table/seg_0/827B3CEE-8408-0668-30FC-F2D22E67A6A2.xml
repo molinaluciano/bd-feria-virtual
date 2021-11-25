@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="827B3CEE-8408-0668-30FC-F2D22E67A6A2" name="detalle_solicitud">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>205341D6-B3DA-495C-9B39-DF2A3E9B5C9D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_solicitud" id="7E6B47C3-5013-8185-8851-A79F4E3F6257">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>71834140-6BB2-87D6-31F7-C7D51AD58AF6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F50C5117-BE34-0311-0FFA-9D8505956D94" referredColumn="813979B0-144A-8190-67FF-DCF79240CB23"/>
+</associations>
+</Column>
+<Column name="id_fruta" id="AF610D1D-3F7F-46E7-E856-CA7AA9E3D630">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>BAE1AF63-3008-D7BE-5442-EAE7DD61E87E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AB4EBCF-7B3B-A813-4B75-91CBEACD1428" referredColumn="25CC1645-C26F-6EF4-981E-65704D893C77"/>
+</associations>
+</Column>
+<Column name="id_calidad" id="A83BEC7E-74ED-F8F3-F6B2-4A80D4EE4F65">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>534FCBD0-FFF0-61B9-7A62-312D2A4CC144</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54C5B16E-913C-2FA0-5641-344628B2563A" referredColumn="31D26106-2B69-AC23-8180-1BFE9BC06D17"/>
+</associations>
+</Column>
+<Column name="id_detalle_solicitud" id="E968C9C0-FE48-E51F-8C47-FD77D9D462F8">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>9E7B39E8-B671-6BC9-D164-1818CAC575D0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kilos" id="1EBB1CC4-770E-9214-53E2-23E29DCFE9D7">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>CF29E564-00AF-7BBB-3C7E-3034C4E7552A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="226FFB27-975D-C725-C9CD-69C6EACE57C1" name="detalle_solicitud_PK">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>4B2A0C33-E605-4526-C191-316E1C8E56E4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E968C9C0-FE48-E51F-8C47-FD77D9D462F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B34B64B5-09B4-B5A8-CFC5-DD3E9676E22A" name="detalle_solicitud_calidad_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A83BEC7E-74ED-F8F3-F6B2-4A80D4EE4F65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18B7B269-3BB9-6F17-2EED-F83125445862" name="detalle_solicitud_fruta_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF610D1D-3F7F-46E7-E856-CA7AA9E3D630"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6366BDD-60C9-D94C-E4C7-2337CF669CBC" name="detalle_solicitud_solicitud_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E6B47C3-5013-8185-8851-A79F4E3F6257"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6AD0E4EF-C292-AAC6-574A-3696B535E44C" containerWithKeyObject="4B2E2DE7-3618-035C-8D73-CED8A2E3E50F" localFKIndex="DF3124DA-F544-6308-5913-0E17FECB5C7F" name="camion_tamano_camion_FK">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>F525C694-CC74-D34E-9A22-CD205D14B70D</importedID>
+<referredTableLongName>tamano_camion</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>552AA4CD-DE56-6CD3-F972-0043304685AE</referredTableID>
+<keyObject>00FA95B6-1002-E522-B0A3-50BE3E62C3A5</keyObject>
+<referredKeyID>00FA95B6-1002-E522-B0A3-50BE3E62C3A5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tamano_camion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

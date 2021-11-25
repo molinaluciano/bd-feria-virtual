@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4CF4F41D-5CBC-E2E8-8A3D-FC11AEC250D7" containerWithKeyObject="00F7DF06-131A-B954-8482-1E0EC141A24E" localFKIndex="61C1B3C7-7BDC-0F5C-752F-639976C4A798" name="productor_contrato_FK">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>5035995B-823B-95BE-05D0-368FD1876BB1</importedID>
+<referredTableLongName>contrato</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8F611D00-F584-6BAA-374D-D884C5EE33FF</referredTableID>
+<keyObject>2089B4EF-8317-4238-295A-0B9006416F69</keyObject>
+<referredKeyID>2089B4EF-8317-4238-295A-0B9006416F69</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_contrato</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

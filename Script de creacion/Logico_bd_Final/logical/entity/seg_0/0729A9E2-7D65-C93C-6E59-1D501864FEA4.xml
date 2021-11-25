@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0729A9E2-7D65-C93C-6E59-1D501864FEA4" name="productor solicitud">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>B6D69060-48E6-58AD-1EB4-B9872FE9D131</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id productor solicitud" id="0E6F914C-6547-D969-3A49-E2D574C004DE">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>5835F972-23A6-12AE-A619-078A2F51C8BF</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="379D3A01-7055-E482-17FB-B63CD075C5B0">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>92E47416-E2F6-0CB0-E263-61501CF80655</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id productor" id="8D942D1E-A1E7-E6B3-8F7F-AA2A1F2AC47E">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>E697C94E-3851-9D79-A0A3-844654BA3B8B</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<referedAttribute>F75B1873-2D00-BB1C-21C7-E03825DFCD9C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id solicitud" id="67EC88A7-3ACC-92CA-894A-3B71D8FF6AED">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>79F8212C-5D51-6C89-08D9-EE7240C83AAF</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<referedAttribute>B539ECBA-E233-8EF4-A9D8-B5FBEB9AB5F6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B01D1B11-9135-2622-D7A4-9F56111AAF28" name="productor solicitud pk">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>49AE3119-F4FF-F11E-DD60-EF5434475730</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0E6F914C-6547-D969-3A49-E2D574C004DE</attributeRef>
+<attributeRef>8D942D1E-A1E7-E6B3-8F7F-AA2A1F2AC47E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

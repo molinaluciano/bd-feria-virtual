@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="productor" directorySegmentName="seg_0" id="00F7DF06-131A-B954-8482-1E0EC141A24E">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="correo" id="04AD2735-0BD5-D334-A69A-6106C098899A">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="rut" id="23A29536-08CE-F3A5-350E-C15CB3833A79">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="telefono" id="2AB29B8E-96FB-354D-DFEC-04F559F12B7C">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_productor" id="3E9F3815-7F94-8370-4AAB-46B4F5F18735">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nombre" id="493144E9-5157-08DB-1C79-7B493AB39057">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_contrato" id="68BC9891-BC26-3CE4-0DA6-73FA217DB1AB">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="direccion" id="70F9768F-3721-E63B-710A-D287C4A1A6DE">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="codigo_postal" id="95F187EE-5C05-76F8-EDCC-79DA699C2D87">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="apellido_materno" id="A82EDA70-40EC-E23A-4530-AECEF851187F">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="numero_identificador" id="A89290E5-B912-6AFF-846A-0AA0DEA9835F">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="apellido_paterno" id="AB743501-B4DF-5761-09DE-EF52F06384E0">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="contrasena" id="F4FD95DF-AFF1-7D95-3CC2-38B91C69E2A6">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="productor__idx" id="522F68A7-CB52-5093-DD1D-C695863E4C0E">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="productor_contrato_FK" id="61C1B3C7-7BDC-0F5C-752F-639976C4A798">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="productor_PK" id="4F75956C-B2E3-1D0F-3E76-BD16066E987B">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

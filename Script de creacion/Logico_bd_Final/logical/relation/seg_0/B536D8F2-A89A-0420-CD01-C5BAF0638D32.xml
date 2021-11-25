@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contrato_productor" directorySegmentName="seg_0" id="B536D8F2-A89A-0420-CD01-C5BAF0638D32">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>4CF4F41D-5CBC-E2E8-8A3D-FC11AEC250D7</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<sourcePk>DD53EFDC-FC91-6AD5-62BE-5182295E5A43</sourcePk>
+<dominantRole>A36812DB-375F-C249-9B98-330DE76CE650</dominantRole>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A36812DB-375F-C249-9B98-330DE76CE650</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>842EA9BD-DDCE-4B79-40D0-F83C4F701EFE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

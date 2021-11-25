@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="venta_detalle_venta" directorySegmentName="seg_0" id="1EFA2D65-690C-C8CB-A7ED-47D473F54C29">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>59524B69-157B-0731-60F6-B0D7CC1425DA</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<sourcePk>85939124-2927-5515-FE2E-815AF36850D4</sourcePk>
+<dominantRole>52CB1506-8B49-F6FD-8470-520C973DAE12</dominantRole>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>52CB1506-8B49-F6FD-8470-520C973DAE12</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>A853A86A-4903-366C-3FD0-B3C70E4E04BB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

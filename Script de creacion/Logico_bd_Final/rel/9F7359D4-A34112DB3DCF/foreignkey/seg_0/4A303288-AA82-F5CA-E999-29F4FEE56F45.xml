@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4A303288-AA82-F5CA-E999-29F4FEE56F45" containerWithKeyObject="4C8CA43D-4CE6-D024-0B9E-B6523D35F4F4" localFKIndex="6CA08586-2D47-55EA-0F5B-11C7550F1625" name="menu_perfilado_tipo_usuario_FK">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>FC80961B-8F19-2A7B-D2F1-1D716798887B</importedID>
+<referredTableLongName>tipo_usuario</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9000D58E-B995-0565-5C72-040127832E41</referredTableID>
+<keyObject>F3B0646D-7CCB-7455-2C9A-8B7E56B31D21</keyObject>
+<referredKeyID>F3B0646D-7CCB-7455-2C9A-8B7E56B31D21</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_usuario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4352831C-6740-249E-9CC2-1A5B3D5D8632" name="venta">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>F6493619-2B1A-448F-EFAF-95BA0F7F3F97</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_solicitud" id="46C708A3-48F3-7C1B-A8DD-BE97CB36B428">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>E7536022-4BC6-7CD8-2AF7-E7893864DE6F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CED52A6E-22E7-F108-71FB-536377363228" referredColumn="813979B0-144A-8190-67FF-DCF79240CB23"/>
+</associations>
+</Column>
+<Column name="id_estado_venta" id="B961EA10-6540-CC0D-5AC1-14C8E7D3318D">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>EBD73415-DF31-6BB6-0B27-383E901E6F75</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3138C24D-6675-2CD7-558E-D6AB1DFEC7A6" referredColumn="86A7E93A-21FE-5236-9532-72B8796F6FCB"/>
+</associations>
+</Column>
+<Column name="id_venta" id="24B4FAE2-4257-C8D8-FB84-1370D5D33921">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>DCADD66C-AACC-562A-11D0-FB1AE13F3E57</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_pago" id="4BE951D3-F805-8508-D671-465D1894FF70">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>9CBADEF9-91A5-8EFB-047C-1A07B4DF6BFA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="478D9816-813F-297E-BD18-53A9E779C224" referredColumn="5137861D-1761-90DC-3AFE-7C2410589206"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="42C2DE59-AD4E-C59D-2426-F543984DB50B" name="venta_PK">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>2B03B0D0-1D53-FB96-5BE6-1B71C46BA76F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24B4FAE2-4257-C8D8-FB84-1370D5D33921"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22E279D2-1447-EC02-D17D-366297DC588C" name="venta__idx">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>8EB73B1E-3280-3F37-B722-952C420CEF19</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46C708A3-48F3-7C1B-A8DD-BE97CB36B428"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79BDDC8B-5719-B8D1-1D29-3C86335E29F3" name="venta_estado_venta_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B961EA10-6540-CC0D-5AC1-14C8E7D3318D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4B81EC9-1B73-5FB3-69D9-4400A142AC5F" name="venta_solicitud_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46C708A3-48F3-7C1B-A8DD-BE97CB36B428"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C53276A-6CFB-1971-A1B8-1AF5B869DDED" name="venta_tipo_pago_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BE951D3-F805-8508-D671-465D1894FF70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

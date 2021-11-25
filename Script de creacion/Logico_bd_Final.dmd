@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Logico_bd_Final" id="66E6828A-9E81-1BC2-177E-BA54A69EC20B" version="3.5">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:43:53 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>66E6828A-9E81-1BC2-177E-BA54A69EC20B</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="2EE0B158-F7B9-6966-4937-AD48F54F107B">
+<designStoragePath>C:\Script_bd_fv_Final</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

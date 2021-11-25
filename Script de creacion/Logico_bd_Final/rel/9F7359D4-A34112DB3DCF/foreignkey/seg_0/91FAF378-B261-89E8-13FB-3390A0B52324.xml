@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="91FAF378-B261-89E8-13FB-3390A0B52324" containerWithKeyObject="AF235FD9-B782-CA19-11BF-E6AFE92215FA" localFKIndex="4533313C-BDE0-D31C-29FE-C88909468015" name="subasta_estado_subasta_FK">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>65F009C7-BF90-312B-D7F8-05F5E5D752A8</importedID>
+<referredTableLongName>estado_subasta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D2A0C269-D7C9-D1C8-8D4D-E7E90A9D16E7</referredTableID>
+<keyObject>A5EE04C9-057C-11A4-0195-79BEE83043EB</keyObject>
+<referredKeyID>A5EE04C9-057C-11A4-0195-79BEE83043EB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estado_subasta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

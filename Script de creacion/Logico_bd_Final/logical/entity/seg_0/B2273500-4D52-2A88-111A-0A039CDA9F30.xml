@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B2273500-4D52-2A88-111A-0A039CDA9F30" name="saldo">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:45:36 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id fruta" id="6AD5FD8C-14DE-EBE6-24D9-8D1F7C8234A8">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:47:47 UTC</createdTime>
+<generatorID>BB58F402-C18A-BF52-EF66-A752746E8193</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<referedAttribute>156CADC8-43BC-F7E4-725A-F749DD3A20DD</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id calidad" id="DF294679-D5CF-3698-9A51-A1C1660A8EA3">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:48:20 UTC</createdTime>
+<generatorID>966B8B76-31ED-7513-027D-C72A06051D6E</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<referedAttribute>C92D83CC-3D65-09F0-5FEC-6F64E2A0C75F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8825BBD3-0E5E-C67A-2E4E-3CF92A619BBD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_saldo" id="3650F64F-608B-9294-A77F-E72EFACF6433">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:48:38 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kilos" id="CC6E3C93-8D69-B3C4-7C86-68FE5921186D">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:48:55 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="disponible" id="74170F35-7852-081F-D3DA-6C0E8B2AA1CB">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:49:07 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio" id="7771ED2A-DDBA-4506-B28B-F77404B002A4">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:49:28 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cliente_comprador" id="162DF0E4-B5AD-CC42-39F0-2D15572922D3">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:49:42 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D61D1B92-30D8-CED5-900B-E5783804FF70" name="saldo PK">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:48:52 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3650F64F-608B-9294-A77F-E72EFACF6433</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ruta_detalle_ruta" directorySegmentName="seg_0" id="60D06C3F-7A2D-1170-13E5-846933578E5C">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>BF298212-09DE-0692-8EA9-BFD582DA440E</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<sourcePk>230FB19B-727A-2928-14B0-D3DB039C1127</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FD4F2EC7-B81D-9849-457C-C46A282E1C9B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>665F2E03-2C6F-BE44-CD94-77FC65AB77AB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

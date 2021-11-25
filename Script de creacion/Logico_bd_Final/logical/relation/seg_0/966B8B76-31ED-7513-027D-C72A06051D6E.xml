@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="calidad_saldo" directorySegmentName="seg_0" id="966B8B76-31ED-7513-027D-C72A06051D6E">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:48:20 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<sourcePk>502FF26F-7AB4-A560-AC49-4C395830A01B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>66C89944-8430-C5C1-ABF8-198164715818</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B2273500-4D52-2A88-111A-0A039CDA9F30</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="54C5B16E-913C-2FA0-5641-344628B2563A" containerWithKeyObject="827B3CEE-8408-0668-30FC-F2D22E67A6A2" localFKIndex="B34B64B5-09B4-B5A8-CFC5-DD3E9676E22A" name="detalle_solicitud_calidad_FK">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>BACC06F2-D71B-747D-AEEC-595F653FACBF</importedID>
+<referredTableLongName>calidad</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ECF51749-A4C3-4E21-C554-B4078AA9D681</referredTableID>
+<keyObject>D1C6DD72-67B2-D62F-D1C9-AAC43E0D5783</keyObject>
+<referredKeyID>D1C6DD72-67B2-D62F-D1C9-AAC43E0D5783</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_calidad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

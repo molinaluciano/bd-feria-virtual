@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6499872F-E05D-197A-6AEE-E20A5AF43C49" containerWithKeyObject="12F2139A-0FB8-A726-9889-A14C03284975" localFKIndex="92788E3F-9FA7-81F0-8717-6CFE358A9E21" name="saldo_calidad_FK">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:50:19 UTC</createdTime>
+<generatorID>966B8B76-31ED-7513-027D-C72A06051D6E</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<referredTableLongName>calidad</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ECF51749-A4C3-4E21-C554-B4078AA9D681</referredTableID>
+<keyObject>D1C6DD72-67B2-D62F-D1C9-AAC43E0D5783</keyObject>
+<referredKeyID>D1C6DD72-67B2-D62F-D1C9-AAC43E0D5783</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_calidad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

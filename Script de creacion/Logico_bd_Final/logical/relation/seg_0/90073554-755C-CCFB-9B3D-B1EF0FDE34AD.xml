@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="camiones_detalle" directorySegmentName="seg_0" id="90073554-755C-CCFB-9B3D-B1EF0FDE34AD">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>C9AA5A0E-DE23-DA84-D4E5-A2DBE1FFA722</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<sourcePk>FED327C5-4824-E002-9BAB-FA152F253243</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DDCB7DAE-131C-6619-921F-015D965442D8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BF758341-81E0-1EB8-DCCB-64208D8B485D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

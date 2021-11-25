@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="productor_productor_solcitudes" directorySegmentName="seg_0" id="E697C94E-3851-9D79-A0A3-844654BA3B8B">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>36F7716E-4FCA-625D-9A9A-0695A4922E6C</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<sourcePk>86DD34FA-5706-20A8-238C-F261D96A86B8</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>842EA9BD-DDCE-4B79-40D0-F83C4F701EFE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0729A9E2-7D65-C93C-6E59-1D501864FEA4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

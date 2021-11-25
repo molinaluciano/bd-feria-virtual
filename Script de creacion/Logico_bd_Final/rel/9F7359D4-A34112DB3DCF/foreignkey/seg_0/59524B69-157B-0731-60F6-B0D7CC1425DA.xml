@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="59524B69-157B-0731-60F6-B0D7CC1425DA" containerWithKeyObject="BC991B53-4694-2423-47F1-B15C08D1613A" localFKIndex="7D0ECEDC-882B-FA7C-E7B2-684C41078BB8" name="detalle_venta_venta_FK">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>53CCC216-75A7-4915-8691-CA8543323F57</importedID>
+<referredTableLongName>venta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4352831C-6740-249E-9CC2-1A5B3D5D8632</referredTableID>
+<keyObject>42C2DE59-AD4E-C59D-2426-F543984DB50B</keyObject>
+<referredKeyID>42C2DE59-AD4E-C59D-2426-F543984DB50B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_venta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tipo_solicitud_solicitud" directorySegmentName="seg_0" id="58D1A02F-EAF6-0032-310E-2B860BC0D257">
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:57 UTC</createdTime>
+<generatorID>0040E7B9-C361-1621-4804-30A4D2B3E8D0</generatorID>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<engineerTo>
+<item key="9F7359D4-B806-82D1-6FCC-A34112DB3DCF" value="true"/>
+</engineerTo>
+<sourcePk>215D1FF3-6520-C959-84FA-AEC0C156E1F4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E1FAC438-E0F9-602A-69C2-A85DD0DCA610</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FCD6A866-13C7-480B-763F-BCF0CB67FAEF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

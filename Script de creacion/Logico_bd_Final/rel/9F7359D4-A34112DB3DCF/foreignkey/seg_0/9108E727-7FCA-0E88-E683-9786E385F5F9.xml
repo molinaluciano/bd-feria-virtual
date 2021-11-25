@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9108E727-7FCA-0E88-E683-9786E385F5F9" containerWithKeyObject="5A2CC9D8-FAED-0A24-821E-4A840C82939D" localFKIndex="4B68C9CC-E17E-24A0-0794-C4D00CF28AC5" name="ruta_subasta_FK">
+<sourceDDLFile>Script_bd_fv_Final.ddl</sourceDDLFile>
+<createdBy>phili</createdBy>
+<createdTime>2021-11-25 03:44:46 UTC</createdTime>
+<ownerDesignName>Logico_bd_Final</ownerDesignName>
+<importedID>6D6630C1-7F11-7CA7-40AD-1FCBAF830424</importedID>
+<referredTableLongName>subasta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AF235FD9-B782-CA19-11BF-E6AFE92215FA</referredTableID>
+<keyObject>E197BFF9-8362-53A7-E60E-AFB4CF3F12CF</keyObject>
+<referredKeyID>E197BFF9-8362-53A7-E60E-AFB4CF3F12CF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_subasta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
