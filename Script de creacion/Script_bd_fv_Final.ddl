@@ -1,7 +1,7 @@
 -- Generado por Oracle SQL Developer Data Modeler 21.2.0.183.1957
---   en:        2021-11-17 19:23:11 CLST
---   sitio:      Oracle Database 12c
---   tipo:      Oracle Database 12c
+--   en:        2021-11-24 23:53:47 CLST
+--   sitio:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
 
 
 
@@ -40,8 +40,6 @@ DROP TABLE productor CASCADE CONSTRAINTS;
 DROP TABLE productor_solicitud CASCADE CONSTRAINTS;
 
 DROP TABLE ruta CASCADE CONSTRAINTS;
-
-DROP TABLE saldo CASCADE CONSTRAINTS;
 
 DROP TABLE solicitud CASCADE CONSTRAINTS;
 
@@ -102,7 +100,7 @@ CREATE TABLE contrato (
     descripcion        VARCHAR2(100) NOT NULL,
     fecha_emision      DATE NOT NULL,
     fecha_expiracion   DATE NOT NULL,
-    firmas             NUMBER NOT NULL,
+    firmas             CHAR(1) NOT NULL,
     id_estado_contrato NUMBER NOT NULL
 );
 
@@ -136,11 +134,6 @@ CREATE TABLE detalle_subasta (
     id_camion          NUMBER NOT NULL
 );
 
-CREATE UNIQUE INDEX detalle_subasta__idx ON
-    detalle_subasta (
-        id_camion
-    ASC );
-
 CREATE TABLE detalle_venta (
     id_detalle_venta NUMBER NOT NULL,
     precio_bruto     NUMBER NOT NULL,
@@ -169,7 +162,7 @@ CREATE TABLE estado_solicitud (
     descripcion         VARCHAR2(25) NOT NULL
 );
 
-ALTER TABLE estado_solicitud ADD CONSTRAINT estado_solicitud_pk PRIMARY KEY ( id_estado_solicitud );
+ALTER TABLE estado_solicitud ADD CONSTRAINT tipo_estado_solicitud_pk PRIMARY KEY ( id_estado_solicitud );
 
 CREATE TABLE estado_subasta (
     id_estado_subasta NUMBER NOT NULL,
@@ -254,19 +247,6 @@ CREATE UNIQUE INDEX ruta__idx ON
 
 ALTER TABLE ruta ADD CONSTRAINT ruta_pk PRIMARY KEY ( id_ruta );
 
-CREATE TABLE saldo (
-    id_saldo             NUMBER NOT NULL,
-    kilos                NUMBER,
-    disponible           CHAR 
---  WARNING: CHAR size not specified 
-    ,
-    id_cliente_comprador NUMBER,
-    id_fruta             NUMBER NOT NULL,
-    id_calidad           NUMBER NOT NULL
-);
-
-ALTER TABLE saldo ADD CONSTRAINT saldo_pk PRIMARY KEY ( id_saldo );
-
 CREATE TABLE solicitud (
     id_usuario             NUMBER NOT NULL,
     id_tipo_solicitud      NUMBER NOT NULL,
@@ -304,7 +284,7 @@ ALTER TABLE tamano_camion ADD CONSTRAINT tamano_camion_pk PRIMARY KEY ( id_taman
 
 CREATE TABLE tipo_camion (
     id_tipo_camion NUMBER NOT NULL,
-    refrigeracion  NUMBER NOT NULL,
+    refrigeracion  CHAR(1) NOT NULL,
     capacidad_kg   NUMBER NOT NULL
 );
 
@@ -389,130 +369,122 @@ CREATE UNIQUE INDEX venta__idx ON
 ALTER TABLE venta ADD CONSTRAINT venta_pk PRIMARY KEY ( id_venta );
 
 ALTER TABLE camion
-    ADD CONSTRAINT camion_tamano_camion_fk FOREIGN KEY ( id_tamano_camion )
-        REFERENCES tamano_camion ( id_tamano_camion );
-
-ALTER TABLE camion
-    ADD CONSTRAINT camion_tipo_camion_fk FOREIGN KEY ( id_tipo_camion )
+    ADD CONSTRAINT camion_tipo_camion FOREIGN KEY ( id_tipo_camion )
         REFERENCES tipo_camion ( id_tipo_camion );
 
-ALTER TABLE camion
-    ADD CONSTRAINT camion_transportista_fk FOREIGN KEY ( id_transportista )
-        REFERENCES transportista ( id_transportista );
+ALTER TABLE detalle_subasta
+    ADD CONSTRAINT camiones_detalle FOREIGN KEY ( id_camion )
+        REFERENCES camion ( id_camion );
+
+ALTER TABLE fruta
+    ADD CONSTRAINT categoria_fruta_fruta FOREIGN KEY ( id_categoria_fruta )
+        REFERENCES categoria_fruta ( id_categoria_fruta );
+
+ALTER TABLE productor
+    ADD CONSTRAINT contrato_productor FOREIGN KEY ( id_contrato )
+        REFERENCES contrato ( id_contrato );
 
 ALTER TABLE contrato
-    ADD CONSTRAINT contrato_estado_contrato_fk FOREIGN KEY ( id_estado_contrato )
+    ADD CONSTRAINT contrato_tipo_estado FOREIGN KEY ( id_estado_contrato )
         REFERENCES estado_contrato ( id_estado_contrato );
 
+ALTER TABLE detalle_solicitud
+    ADD CONSTRAINT detalle_solicitud_calidad FOREIGN KEY ( id_calidad )
+        REFERENCES calidad ( id_calidad );
+
+ALTER TABLE subasta
+    ADD CONSTRAINT estado_subasta_subasta FOREIGN KEY ( id_estado_subasta )
+        REFERENCES estado_subasta ( id_estado_subasta );
+
+ALTER TABLE venta
+    ADD CONSTRAINT estado_venta_venta FOREIGN KEY ( id_estado_venta )
+        REFERENCES estado_venta ( id_estado_venta );
+
+ALTER TABLE detalle_solicitud
+    ADD CONSTRAINT fruta_detalle_solicitud FOREIGN KEY ( id_fruta )
+        REFERENCES fruta ( id_fruta );
+
+ALTER TABLE usuario
+    ADD CONSTRAINT pais_clientes FOREIGN KEY ( id_pais )
+        REFERENCES pais ( id_pais );
+
+ALTER TABLE productor_solicitud
+    ADD CONSTRAINT productor_productor_solcitudes FOREIGN KEY ( id_productor )
+        REFERENCES productor ( id_productor );
+
 ALTER TABLE detalle_ruta
-    ADD CONSTRAINT detalle_ruta_ruta_fk FOREIGN KEY ( id_ruta )
+    ADD CONSTRAINT ruta_detalle_ruta FOREIGN KEY ( id_ruta )
         REFERENCES ruta ( id_ruta );
 
 ALTER TABLE detalle_solicitud
-    ADD CONSTRAINT detalle_solicitud_calidad_fk FOREIGN KEY ( id_calidad )
-        REFERENCES calidad ( id_calidad );
+    ADD CONSTRAINT solicitud_detalle_solicitud FOREIGN KEY ( id_solicitud )
+        REFERENCES solicitud ( id_solicitud );
 
-ALTER TABLE detalle_solicitud
-    ADD CONSTRAINT detalle_solicitud_fruta_fk FOREIGN KEY ( id_fruta )
-        REFERENCES fruta ( id_fruta );
+--  ERROR: FK name length exceeds maximum allowed length(30) 
+ALTER TABLE productor_solicitud
+    ADD CONSTRAINT solicitud_productor_solicitudes FOREIGN KEY ( id_solicitud )
+        REFERENCES solicitud ( id_solicitud );
 
-ALTER TABLE detalle_solicitud
-    ADD CONSTRAINT detalle_solicitud_solicitud_fk FOREIGN KEY ( id_solicitud )
+ALTER TABLE subasta
+    ADD CONSTRAINT solicitud_subasta FOREIGN KEY ( id_solicitud )
+        REFERENCES solicitud ( id_solicitud );
+
+ALTER TABLE venta
+    ADD CONSTRAINT solicitud_venta FOREIGN KEY ( id_solicitud )
         REFERENCES solicitud ( id_solicitud );
 
 ALTER TABLE detalle_subasta
-    ADD CONSTRAINT detalle_subasta_camion_fk FOREIGN KEY ( id_camion )
-        REFERENCES camion ( id_camion );
-
-ALTER TABLE detalle_subasta
-    ADD CONSTRAINT detalle_subasta_subasta_fk FOREIGN KEY ( id_subasta )
+    ADD CONSTRAINT subasta_detalle_subasta FOREIGN KEY ( id_subasta )
         REFERENCES subasta ( id_subasta );
-
-ALTER TABLE detalle_venta
-    ADD CONSTRAINT detalle_venta_venta_fk FOREIGN KEY ( id_venta )
-        REFERENCES venta ( id_venta );
-
-ALTER TABLE fruta
-    ADD CONSTRAINT fruta_categoria_fruta_fk FOREIGN KEY ( id_categoria_fruta )
-        REFERENCES categoria_fruta ( id_categoria_fruta );
-
-ALTER TABLE menu_perfilado
-    ADD CONSTRAINT menu_perfilado_tipo_usuario_fk FOREIGN KEY ( id_tipo_usuario )
-        REFERENCES tipo_usuario ( id_tipo_usuario );
-
-ALTER TABLE productor
-    ADD CONSTRAINT productor_contrato_fk FOREIGN KEY ( id_contrato )
-        REFERENCES contrato ( id_contrato );
-
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE productor_solicitud
-    ADD CONSTRAINT productor_solicitud_productor_fk FOREIGN KEY ( id_productor )
-        REFERENCES productor ( id_productor );
-
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE productor_solicitud
-    ADD CONSTRAINT productor_solicitud_solicitud_fk FOREIGN KEY ( id_solicitud )
-        REFERENCES solicitud ( id_solicitud );
 
 ALTER TABLE ruta
-    ADD CONSTRAINT ruta_subasta_fk FOREIGN KEY ( id_subasta )
+    ADD CONSTRAINT subasta_ruta FOREIGN KEY ( id_subasta )
         REFERENCES subasta ( id_subasta );
 
-ALTER TABLE saldo
-    ADD CONSTRAINT saldo_calidad_fk FOREIGN KEY ( id_calidad )
-        REFERENCES calidad ( id_calidad );
+ALTER TABLE camion
+    ADD CONSTRAINT tamano_camion_camion FOREIGN KEY ( id_tamano_camion )
+        REFERENCES tamano_camion ( id_tamano_camion );
 
-ALTER TABLE saldo
-    ADD CONSTRAINT saldo_fruta_fk FOREIGN KEY ( id_fruta )
-        REFERENCES fruta ( id_fruta );
-
+--  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE solicitud
-    ADD CONSTRAINT solicitud_estado_solicitud_fk FOREIGN KEY ( id_estado_solicitud )
+    ADD CONSTRAINT tipo_estado_solicitud_solicitud FOREIGN KEY ( id_estado_solicitud )
         REFERENCES estado_solicitud ( id_estado_solicitud );
 
+ALTER TABLE venta
+    ADD CONSTRAINT tipo_pago_venta FOREIGN KEY ( id_tipo_pago )
+        REFERENCES tipo_pago ( id_tipo_pago );
+
 ALTER TABLE solicitud
-    ADD CONSTRAINT solicitud_tipo_solicitud_fk FOREIGN KEY ( id_tipo_solicitud )
+    ADD CONSTRAINT tipo_solicitud_solicitud FOREIGN KEY ( id_tipo_solicitud )
         REFERENCES tipo_solicitud ( id_tipo_solicitud );
 
-ALTER TABLE solicitud
-    ADD CONSTRAINT solicitud_usuario_fk FOREIGN KEY ( id_usuario )
-        REFERENCES usuario ( id_usuario );
-
-ALTER TABLE subasta
-    ADD CONSTRAINT subasta_estado_subasta_fk FOREIGN KEY ( id_estado_subasta )
-        REFERENCES estado_subasta ( id_estado_subasta );
-
-ALTER TABLE subasta
-    ADD CONSTRAINT subasta_solicitud_fk FOREIGN KEY ( id_solicitud )
-        REFERENCES solicitud ( id_solicitud );
-
-ALTER TABLE usuario
-    ADD CONSTRAINT usuario_pais_fk FOREIGN KEY ( id_pais )
-        REFERENCES pais ( id_pais );
-
-ALTER TABLE usuario
-    ADD CONSTRAINT usuario_tipo_usuario_fk FOREIGN KEY ( id_tipo_usuario )
+ALTER TABLE menu_perfilado
+    ADD CONSTRAINT tipo_usuario_menu_perfilados FOREIGN KEY ( id_tipo_usuario )
         REFERENCES tipo_usuario ( id_tipo_usuario );
 
-ALTER TABLE venta
-    ADD CONSTRAINT venta_estado_venta_fk FOREIGN KEY ( id_estado_venta )
-        REFERENCES estado_venta ( id_estado_venta );
+ALTER TABLE usuario
+    ADD CONSTRAINT tipo_usuario_usuario FOREIGN KEY ( id_tipo_usuario )
+        REFERENCES tipo_usuario ( id_tipo_usuario );
 
-ALTER TABLE venta
-    ADD CONSTRAINT venta_solicitud_fk FOREIGN KEY ( id_solicitud )
-        REFERENCES solicitud ( id_solicitud );
+ALTER TABLE camion
+    ADD CONSTRAINT transportista_camion FOREIGN KEY ( id_transportista )
+        REFERENCES transportista ( id_transportista );
 
-ALTER TABLE venta
-    ADD CONSTRAINT venta_tipo_pago_fk FOREIGN KEY ( id_tipo_pago )
-        REFERENCES tipo_pago ( id_tipo_pago );
+ALTER TABLE solicitud
+    ADD CONSTRAINT usuario_solicitud FOREIGN KEY ( id_usuario )
+        REFERENCES usuario ( id_usuario );
+
+ALTER TABLE detalle_venta
+    ADD CONSTRAINT venta_detalle_venta FOREIGN KEY ( id_venta )
+        REFERENCES venta ( id_venta );
 
 
 
 -- Informe de Resumen de Oracle SQL Developer Data Modeler: 
 -- 
--- CREATE TABLE                            30
--- CREATE INDEX                             6
--- ALTER TABLE                             58
+-- CREATE TABLE                            29
+-- CREATE INDEX                             5
+-- ALTER TABLE                             55
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0
@@ -543,11 +515,10 @@ ALTER TABLE venta
 -- DROP DATABASE                            0
 -- 
 -- REDACTION POLICY                         0
--- TSDP POLICY                              0
 -- 
 -- ORDS DROP SCHEMA                         0
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
 -- ERRORS                                   2
--- WARNINGS                                 1
+-- WARNINGS                                 0
