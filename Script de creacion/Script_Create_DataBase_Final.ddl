@@ -484,15 +484,13 @@ ALTER TABLE productor
         REFERENCES contrato ( id_contrato )
     NOT DEFERRABLE;
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE productor_solicitud
-    ADD CONSTRAINT productor_solicitud_productor_fk FOREIGN KEY ( id_productor )
+    ADD CONSTRAINT prod_soli_prod_fk FOREIGN KEY ( id_productor )
         REFERENCES productor ( id_productor )
     NOT DEFERRABLE;
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE productor_solicitud
-    ADD CONSTRAINT productor_solicitud_solicitud_fk FOREIGN KEY ( id_solicitud )
+    ADD CONSTRAINT prod_soli_soli_fk FOREIGN KEY ( id_solicitud )
         REFERENCES solicitud ( id_solicitud )
     NOT DEFERRABLE;
 
